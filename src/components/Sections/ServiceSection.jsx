@@ -61,7 +61,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="relative w-full py-24 overflow-hidden bg-black">
+    <section className="relative font-serif w-full py-24 overflow-hidden bg-black">
       
       {/* Background Glow */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-[#FFB800]/20 blur-[120px] rounded-full"></div>
@@ -85,7 +85,7 @@ export default function ServicesSection() {
             Our Expertise
           </span>
 
-          <h2 className="text-4xl md:text-6xl font-bold text-white mt-4 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mt-4 leading-tight">
             Premium Digital <br />
             <span className="text-[#FFB800]">
               Services For Businesses

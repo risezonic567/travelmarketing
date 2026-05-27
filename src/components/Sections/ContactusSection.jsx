@@ -35,7 +35,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="min-h-screen bg-slate-950 mb-10 text-white py-11 px-4 flex items-center justify-center overflow-hidden font-sans">
+    <section className="min-h-screen bg-slate-950 mb-10 text-white py-11 px-4 flex items-center justify-center overflow-hidden font-serif">
       <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 relative z-10">
         
         <motion.div 

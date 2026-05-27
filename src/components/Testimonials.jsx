@@ -40,7 +40,7 @@ export default function TestimonialSection() {
 
       <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 relative z-10  font-serif">
 
         <motion.div
           initial={{

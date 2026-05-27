@@ -7,7 +7,7 @@ import TestimonialSection from '../components/Testimonials'
 export default function AboutPage() {
   return (
     <div>
-         <section className="relative h-screen w-full overflow-hidden">
+         <section className="relative h-screen w-full overflow-hidden font-serif">
 
         <img
           src="/images/Corporat1.jpeg"

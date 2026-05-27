@@ -30,7 +30,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-screen w-full overflow-hidden font-serif">
 
         <img
           src="/images/Corporat1.jpeg"
@@ -44,7 +44,7 @@ export default function HomePage() {
 
         <div className="relative z-10 flex flex-col justify-center mt-7 items-center h-full text-white px-6 text-center">
 
-          <motion.span
+          {/* <motion.span
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -57,7 +57,7 @@ export default function HomePage() {
             "
           >
             Premium Business & Travel Solutions
-          </motion.span>
+          </motion.span> */}
 
           <motion.h1
             initial={{ opacity: 0, y: 70 }}
@@ -67,8 +67,8 @@ export default function HomePage() {
               delay: 0.2,
             }}
             className="
-            text-5xl
-            md:text-7xl
+            text-4xl
+            md:text-5xl
             font-bold
             leading-tight
             mt-6

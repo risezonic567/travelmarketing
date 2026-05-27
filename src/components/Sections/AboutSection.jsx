@@ -9,7 +9,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="relative py-32 bg-white overflow-hidden">
+    <section className="relative py-32 bg-white overflow-hidden font-serif">
 
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-400/10 blur-[140px] rounded-full"></div>
@@ -39,7 +39,7 @@ export default function AboutSection() {
               About Our Agency
             </span>
 
-            <h2 className="text-5xl md:text-7xl font-bold text-[#0B1F3A] leading-[1.1] mt-6">
+            <h2 className="text-5xl md:text-5xl font-bold text-[#0B1F3A] leading-[1.1] mt-6">
               We Create <br />
 
               <span className="text-yellow-500">

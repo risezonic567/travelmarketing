@@ -38,7 +38,7 @@ const services = [
 
 export default function FeaturedServices() {
   return (
-    <section className="relative py-28 bg-white overflow-hidden">
+    <section className="relative py-28 bg-white overflow-hidden font-serif">
 
       <div className="max-w-[1400px] mx-auto px-6">
 
@@ -53,7 +53,7 @@ export default function FeaturedServices() {
             Featured Travel Services
           </span>
 
-          <h2 className="text-5xl md:text-7xl font-bold text-[#0B1F3A] leading-tight mt-5">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#0B1F3A] leading-tight mt-5">
             Explore The World <br />
             <span className="text-yellow-500">
               With Comfort & Luxury

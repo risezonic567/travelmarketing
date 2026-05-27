@@ -5,83 +5,230 @@ import {
   Rocket,
   Users,
   Globe2,
+  ArrowRight,
+  CheckCircle2,
 } from "lucide-react";
 
 const features = [
   {
     icon: ShieldCheck,
-    title: "Trusted Company",
-    desc: "Reliable digital services trusted by businesses worldwide.",
+    title: "Trusted Services",
+    desc: "Professional solutions with transparency and reliability for every client.",
   },
 
   {
     icon: Rocket,
-    title: "Fast Growth",
-    desc: "Modern strategies to grow your business faster online.",
+    title: "Business Growth",
+    desc: "Modern digital strategies designed to boost your online presence.",
   },
 
   {
     icon: Users,
     title: "Expert Team",
-    desc: "Professional team delivering premium experiences.",
+    desc: "Creative professionals delivering premium experiences and support.",
   },
 
   {
     icon: Globe2,
     title: "Global Reach",
-    desc: "Helping brands connect with global audiences.",
+    desc: "Helping businesses connect with customers worldwide digitally.",
   },
 ];
 
 export default function WhyChooseUsPage() {
   return (
-    <div className="bg-white overflow-hidden">
+    <div className="overflow-x-hidden font-serif">
 
-      {/* HERO */}
-      <section className="relative py-32 bg-[#0B1F3A] overflow-hidden">
+      <section className="relative py-32  overflow-hidden">
 
-        <div className="absolute top-0 left-0 w-72 h-72 bg-yellow-400/20 blur-[120px] rounded-full"></div>
 
-        <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
 
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="uppercase tracking-[4px] text-yellow-400 text-sm font-semibold"
-          >
-            Why Choose Us
-          </motion.span>
+        <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:60px_60px]"></div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-5xl md:text-6xl font-bold text-white mt-6"
-          >
-            Trusted Digital <br />
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
 
-            <span className="text-yellow-400">
-              Growth Partner
-            </span>
-          </motion.h1>
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-gray-300 text-lg leading-8 max-w-3xl mx-auto mt-6"
-          >
-            We create premium websites, SEO solutions, and digital experiences
-            designed to help businesses grow faster.
-          </motion.p>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 80,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.9,
+              }}
+            >
+
+              <span className="uppercase tracking-[4px] text-yellow-400 text-sm font-semibold">
+                Why Choose Us
+              </span>
+
+              <h1 className="text-4xl md:text-5xl font-bold text-black leading-tight mt-6">
+                Premium Digital <br />
+
+                <span className="text-yellow-400">
+                  Experience Agency
+                </span>
+              </h1>
+
+              <p className=" text-lg leading-9 mt-8 max-w-2xl">
+                We build modern websites, powerful SEO strategies, branding,
+                and premium digital experiences that help businesses grow
+                faster and stand out online.
+              </p>
+
+              <div className="space-y-5 mt-10">
+
+                {[
+                  "Modern & Creative Design",
+                  "SEO Optimized Websites",
+                  "Fast Performance",
+                  "Premium Client Support",
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-4"
+                  >
+                    <CheckCircle2
+                      className="text-yellow-400 shrink-0"
+                      size={22}
+                    />
+
+                    <p className="text-black text-lg">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+
+              </div>
+
+              <button
+                className="
+                mt-12
+                bg-yellow-400
+                hover:bg-white
+                text-black
+                px-8
+                py-4
+                rounded-full
+                font-semibold
+                flex
+                items-center
+                gap-3
+                transition-all
+                duration-300
+                "
+              >
+                Get Started
+
+                <ArrowRight size={18} />
+              </button>
+
+            </motion.div>
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: 100,
+              }}
+              animate={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{
+                duration: 1,
+              }}
+              className="relative"
+            >
+
+              <div className="relative rounded-[40px] overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
+
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                  alt=""
+                  className="w-full h-[650px] object-cover"
+                />
+
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> */}
+
+              </div>
+
+              <motion.div
+                animate={{
+                  y: [0, -12, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                }}
+                className="
+                absolute
+                bottom-8
+                -left-6
+                bg-white
+                rounded-3xl
+                p-6
+                shadow-[0_10px_40px_rgba(0,0,0,0.12)]
+                "
+              >
+
+                <h3 className="text-5xl font-bold text-yellow-500">
+                  10+
+                </h3>
+
+                <p className="text-[#07182E] mt-2 font-medium">
+                  Years Experience
+                </p>
+
+              </motion.div>
+
+            </motion.div>
+
+          </div>
 
         </div>
       </section>
 
-      {/* FEATURES */}
-      <section className="py-24 bg-white">
+      <section className="py-28 bg-white relative overflow-hidden">
 
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="absolute top-0 left-0 w-80 h-80 bg-yellow-400/10 blur-[120px] rounded-full"></div>
+
+        <div className="max-w-7xl mx-auto px-6">
+
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 80,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+
+            <span className="uppercase tracking-[4px] text-yellow-500 text-sm font-semibold">
+              Our Advantages
+            </span>
+
+            <h2 className="text-4xl md:text-5xl font-bold text-[#07182E] mt-6">
+              What Makes Us Different
+            </h2>
+
+            <p className="text-gray-600 text-lg leading-8 max-w-3xl mx-auto mt-6">
+              We combine creativity, technology, and strategy to create
+              premium experiences that help businesses succeed digitally.
+            </p>
+
+          </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
@@ -93,42 +240,47 @@ export default function WhyChooseUsPage() {
                   key={index}
                   initial={{
                     opacity: 0,
-                    y: 60,
+                    y: 80,
                   }}
                   whileInView={{
                     opacity: 1,
                     y: 0,
                   }}
                   transition={{
-                    duration: 0.7,
+                    duration: 0.8,
                     delay: index * 0.1,
                   }}
                   viewport={{ once: true }}
                   whileHover={{
-                    y: -8,
+                    y: -10,
                   }}
                   className="
+                  group
                   bg-white
                   border
                   border-gray-200
-                  rounded-[28px]
+                  rounded-[30px]
                   p-8
-                  shadow-[0_10px_30px_rgba(0,0,0,0.05)]
+                  overflow-hidden
+                  relative
+                  shadow-[0_10px_40px_rgba(0,0,0,0.05)]
                   hover:border-yellow-400
                   transition-all
                   duration-500
                   "
                 >
 
-                  <div className="w-14 h-14 rounded-2xl bg-yellow-400 flex items-center justify-center mb-6">
-                    <Icon className="text-black" size={26} />
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-b from-yellow-400/5 to-transparent"></div>
+
+                  <div className="relative z-10 w-16 h-16 rounded-2xl bg-yellow-400 flex items-center justify-center mb-8">
+                    <Icon className="text-black" size={28} />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-[#0B1F3A] mb-4">
+                  <h3 className="relative z-10 text-2xl font-bold text-[#07182E] mb-4">
                     {item.title}
                   </h3>
 
-                  <p className="text-gray-600 leading-7">
+                  <p className="relative z-10 text-gray-600 leading-8">
                     {item.desc}
                   </p>
 
