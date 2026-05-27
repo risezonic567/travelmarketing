@@ -41,7 +41,7 @@ export default function TestimonialSection() {
       {/* Blur BG */}
       <div className="absolute top-0 left-0 w-72 md:w-96 h-72 md:h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 font-serif overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10  overflow-hidden">
 
         {/* Heading */}
         <motion.div
@@ -190,7 +190,7 @@ export default function TestimonialSection() {
                         “
                       </div>
 
-                      <p className="text-base md:text-xl leading-8 md:leading-10 text-white/80 mt-4 md:mt-6 relative z-10">
+                      <p className="text-base md:text-xl font-serif leading-8 md:leading-10 text-white/80 mt-4 md:mt-6 relative z-10">
                         {item.text}
                       </p>
 

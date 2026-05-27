@@ -37,7 +37,7 @@ const features = [
 
 export default function WhyChooseUsPage() {
   return (
-    <div className="overflow-x-hidden font-serif">
+    <div className="overflow-x-hidden">
 
       <section className="relative py-32  overflow-hidden">
 
@@ -75,7 +75,7 @@ export default function WhyChooseUsPage() {
                 </span>
               </h1>
 
-              <p className=" text-lg leading-9 mt-8 max-w-2xl">
+              <p className=" text-lg leading-9 font-serif mt-8 max-w-2xl">
                 We build modern websites, powerful SEO strategies, branding,
                 and premium digital experiences that help businesses grow
                 faster and stand out online.
@@ -98,7 +98,7 @@ export default function WhyChooseUsPage() {
                       size={22}
                     />
 
-                    <p className="text-black text-lg">
+                    <p className="text-black text-lg font-serif">
                       {item}
                     </p>
                   </div>
@@ -223,7 +223,7 @@ export default function WhyChooseUsPage() {
               What Makes Us Different
             </h2>
 
-            <p className="text-gray-600 text-lg leading-8 max-w-3xl mx-auto mt-6">
+            <p className="text-gray-600 text-lg font-serif leading-8 max-w-3xl mx-auto mt-6">
               We combine creativity, technology, and strategy to create
               premium experiences that help businesses succeed digitally.
             </p>
@@ -280,7 +280,7 @@ export default function WhyChooseUsPage() {
                     {item.title}
                   </h3>
 
-                  <p className="relative z-10 text-gray-600 leading-8">
+                  <p className="relative z-10 text-gray-600 leading-8 font-serif">
                     {item.desc}
                   </p>
 

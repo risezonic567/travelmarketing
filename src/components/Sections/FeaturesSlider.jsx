@@ -38,7 +38,7 @@ const services = [
 
 export default function FeaturedServices() {
   return (
-    <section className="relative py-28 bg-white overflow-hidden font-serif">
+    <section className="relative py-28 bg-white overflow-hidden">
 
       <div className="max-w-[1400px] mx-auto px-6">
 
@@ -60,7 +60,7 @@ export default function FeaturedServices() {
             </span>
           </h2>
 
-          <p className="text-gray-600 text-lg leading-8 mt-8 max-w-2xl">
+          <p className="text-gray-600 font-serif text-lg leading-8 mt-8 max-w-2xl">
             We provide complete travel solutions including international flights,
             luxury hotels, and visa assistance designed for smooth and premium
             experiences.
@@ -163,7 +163,7 @@ export default function FeaturedServices() {
                 Flight Booking
               </h3>
 
-              <p className="text-gray-200 max-w-2xl leading-8 text-lg">
+              <p className="text-gray-200 max-w-2xl leading-8 text-lg font-serif">
                 Get the best domestic and international flight deals with
                 smooth booking experiences and premium travel support.
               </p>
@@ -257,7 +257,7 @@ export default function FeaturedServices() {
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-200 text-sm mt-3 leading-6">
+                    <p className="text-gray-200 text-sm mt-3 leading-6 font-serif">
                       {item.desc}
                     </p>
 

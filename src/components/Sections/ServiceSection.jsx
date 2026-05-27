@@ -92,7 +92,7 @@ export default function ServicesSection() {
             </span>
           </h2>
 
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg mt-6 leading-relaxed">
+          <p className="text-gray-400 max-w-2xl mx-auto font-serif text-lg mt-6 leading-relaxed">
             We create powerful SEO strategies and high-performing websites
             designed to help businesses grow faster online.
           </p>
@@ -135,14 +135,14 @@ export default function ServicesSection() {
                   <motion.div
                     initial={{
                       opacity: 0,
-                      y: 100,
+                      y: 0,
                     }}
                     whileInView={{
                       opacity: 1,
                       y: 0,
                     }}
                     transition={{
-                      duration: 0.7,
+                      duration: 0.5,
                       delay: index * 0.1,
                     }}
                     viewport={{ once: true }}
@@ -207,7 +207,7 @@ export default function ServicesSection() {
                         {service.title}
                       </h3>
 
-                      <p className="text-gray-400 leading-relaxed text-[15px]">
+                      <p className="text-gray-400 leading-relaxed text-[15px] font-serif">
                         {service.desc}
                       </p>
                     </div>

@@ -35,7 +35,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="min-h-screen bg-slate-950 mb-10 text-white py-11 px-4 flex items-center justify-center overflow-hidden font-serif">
+    <section className="min-h-screen bg-slate-950 mb-10 text-white py-11 px-4 flex items-center justify-center overflow-hidden">
       <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 relative z-10">
         
         <motion.div 
@@ -55,7 +55,7 @@ export default function ContactSection() {
                 Let's Grow Together!
               </span>
             </h2>
-            <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+            <p className="text-slate-400 text-sm md:text-base leading-relaxed font-serif">
               If you have any business ideas or projects, contact us to design, develop, and grow your business digitally.
             </p>
           </motion.div>

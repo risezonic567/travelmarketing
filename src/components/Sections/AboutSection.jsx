@@ -50,7 +50,7 @@ export default function AboutSection() {
               Experiences
             </h2>
 
-            <p className="text-gray-600 text-lg leading-9 mt-10 max-w-2xl">
+            <p className="text-gray-600 text-lg leading-9 font-serif mt-10 max-w-2xl">
               We help travelers and businesses explore the world with
               modern solutions, premium comfort, and trusted support
               designed for unforgettable journeys.
@@ -70,7 +70,7 @@ export default function AboutSection() {
                     Global Travel Network
                   </h4>
 
-                  <p className="text-gray-600 mt-2">
+                  <p className="text-gray-600 font-serif mt-2">
                     International travel solutions worldwide.
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export default function AboutSection() {
                     Trusted & Secure
                   </h4>
 
-                  <p className="text-gray-600 mt-2">
+                  <p className="text-gray-600 font-serif mt-2">
                     Safe bookings with premium customer support.
                   </p>
                 </div>
@@ -124,96 +124,109 @@ export default function AboutSection() {
           </motion.div>
 
           {/* RIGHT IMAGES */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: 100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{
-              duration: 1,
-            }}
-            viewport={{ once: true }}
-            className="relative h-[700px]"
-          >
+        <motion.div
+  initial={{
+    opacity: 0,
+    x: 100,
+  }}
+  whileInView={{
+    opacity: 1,
+    x: 0,
+  }}
+  transition={{
+    duration: 1,
+  }}
+  viewport={{ once: true }}
+  className="relative h-[520px] sm:h-[620px] lg:h-[700px] mt-16 lg:mt-0"
+>
 
-            {/* Main Image */}
-            <div
-              className="
-              absolute
-              top-0
-              right-0
-              w-[80%]
-              h-[500px]
-              rounded-[40px]
-              overflow-hidden
-              shadow-[0_20px_60px_rgba(0,0,0,0.15)]
-              "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
+  {/* Main Image */}
+  <div
+    className="
+    absolute
+    top-0
+    right-0
+    w-[90%]
+    sm:w-[80%]
+    h-[320px]
+    sm:h-[420px]
+    lg:h-[500px]
+    rounded-[25px]
+    sm:rounded-[40px]
+    overflow-hidden
+    shadow-[0_20px_60px_rgba(0,0,0,0.15)]
+    "
+  >
+    <img
+      src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
+      alt=""
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-            {/* Small Image */}
-            <div
-              className="
-              absolute
-              bottom-0
-              left-0
-              w-[55%]
-              h-[320px]
-              rounded-[32px]
-              overflow-hidden
-              border-[8px]
-              border-white
-              shadow-[0_20px_60px_rgba(0,0,0,0.15)]
-              "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1200&auto=format&fit=crop"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
+  {/* Small Image */}
+  <div
+    className="
+    absolute
+    bottom-0
+    left-0
+    w-[65%]
+    sm:w-[55%]
+    h-[220px]
+    sm:h-[280px]
+    lg:h-[320px]
+    rounded-[22px]
+    sm:rounded-[32px]
+    overflow-hidden
+    border-[5px]
+    sm:border-[8px]
+    border-white
+    shadow-[0_20px_60px_rgba(0,0,0,0.15)]
+    "
+  >
+    <img
+      src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1200&auto=format&fit=crop"
+      alt=""
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-            {/* Floating Experience Card */}
-            <motion.div
-              animate={{
-                y: [0, -15, 0],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-              }}
-              className="
-              absolute
-              top-[45%]
-              left-10
-              bg-white
-              px-8
-              py-6
-              rounded-3xl
-              shadow-[0_10px_40px_rgba(0,0,0,0.12)]
-              "
-            >
+  {/* Floating Experience Card */}
+  <motion.div
+    animate={{
+      y: [0, -15, 0],
+    }}
+    transition={{
+      duration: 4,
+      repeat: Infinity,
+    }}
+    className="
+    absolute
+    top-[42%]
+    left-4
+    sm:left-10
+    bg-white
+    px-5
+    sm:px-8
+    py-4
+    sm:py-6
+    rounded-2xl
+    sm:rounded-3xl
+    shadow-[0_10px_40px_rgba(0,0,0,0.12)]
+    "
+  >
 
-              <h3 className="text-5xl font-bold text-yellow-500">
-                10+
-              </h3>
+    <h3 className="text-3xl sm:text-5xl font-bold text-yellow-500">
+      10+
+    </h3>
 
-              <p className="text-[#0B1F3A] mt-2 font-medium">
-                Years Experience
-              </p>
+    <p className="text-[#0B1F3A] mt-1 sm:mt-2 text-sm sm:text-base font-medium">
+      Years Experience
+    </p>
 
-            </motion.div>
+  </motion.div>
 
-          </motion.div>
+</motion.div>
 
         </div>
 
@@ -244,7 +257,7 @@ export default function AboutSection() {
               Designed For Modern Explorers
             </h3>
 
-            <p className="text-white/70 leading-8 mt-6 text-lg">
+            <p className="text-white/70 leading-8 mt-6 text-lg font-serif">
               Discover curated travel experiences, business tours,
               and premium journeys crafted with comfort and elegance.
             </p>
@@ -271,7 +284,7 @@ export default function AboutSection() {
               Happy Travelers Worldwide
             </p>
 
-            <p className="leading-8 mt-8 text-black/80 text-lg">
+            <p className="leading-8 mt-8 text-black/80 text-lg font-serif">
               Thousands of customers trust us for international
               travel, business trips, and luxury experiences.
             </p>

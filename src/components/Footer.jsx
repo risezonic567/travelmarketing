@@ -12,12 +12,55 @@ export default function Footer() {
         
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="bg-yellow-400 p-2 rounded-full">
-              <Plane className="text-[#0B1F3A]" size={22} />
-            </div>
-            <h1 className="text-2xl font-bold">
-              Global<span className="text-yellow-400">Way</span>
-            </h1>
+            <div className="text-2xl font-semibold tracking-wide flex items-center">
+             <Link to="/" className="flex items-center gap-3 group">
+               
+               {/* Logo Box */}
+               <div
+                 className="
+                 relative
+                 overflow-hidden
+                 px-3
+                 py-2
+                 transition-all
+                 duration-500
+                 "
+               >
+                 <img
+                   src="/images/logo/dfgh.png"
+                   alt="Logo"
+                   className="
+                   h-12
+                   w-auto
+                   object-contain
+                   transition-all
+                   duration-500
+                   group-hover:scale-105
+                   "
+                 />
+           
+                 {/* Glow */}
+                 <div
+                   className="
+                   absolute
+                   inset-0
+                   bg-gradient-to-r
+                   from-yellow-400/0
+                   via-yellow-400/10
+                   to-yellow-400/0
+                   opacity-0
+                   group-hover:opacity-100
+                   transition-all
+                   duration-700
+                   "
+                 ></div>
+               </div>
+           
+              
+           
+             </Link>
+           </div>
+           
           </div>
 
           <p className="text-gray-300 leading-7">
