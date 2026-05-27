@@ -9,28 +9,13 @@ import TestimonialSection from "../components/Testimonials";
 import WhyChooseUsPage from "../components/Sections/WhychooseusSection";
 
 export default function HomePage() {
-   const fadeUp = {
-    hidden: {
-      opacity: 0,
-      y: 120,
-      scale: 0.96,
-    },
 
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-
-      transition: {
-        duration: 1,
-        ease: [0.25, 1, 0.5, 1],
-      },
-    },
-  };
+  
 
   return (
-    <>
-      <section className="relative h-screen w-full overflow-hidden font-serif">
+    <div className="overflow-x-hidden bg-white">
+
+      <section className="relative min-h-screen w-full overflow-hidden">
 
         <img
           src="/images/Corporat1.jpeg"
@@ -38,40 +23,30 @@ export default function HomePage() {
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/5 via-[#0B1F3A]/20 to-black/10"></div> */}
-
-        <div className="relative z-10 flex flex-col justify-center mt-7 items-center h-full text-white px-6 text-center">
-
-          {/* <motion.span
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="
-            uppercase
-            tracking-[4px]
-            text-yellow-400
-            text-sm
-            font-semibold 
-            "
-          >
-            Premium Business & Travel Solutions
-          </motion.span> */}
+        <div className="relative z-10 flex flex-col justify-center items-center min-h-screen text-white px-4 md:px-6 text-center">
 
           <motion.h1
-            initial={{ opacity: 0, y: 70 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{
+              opacity: 0,
+              y: 70,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
             transition={{
               duration: 0.9,
               delay: 0.2,
             }}
             className="
             text-4xl
-            md:text-5xl
+            sm:text-5xl
+            md:text-6xl
+            lg:text-7xl
             font-bold
             leading-tight
-            mt-6
             max-w-5xl
             "
           >
@@ -83,19 +58,29 @@ export default function HomePage() {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
             transition={{
               duration: 0.8,
               delay: 0.4,
             }}
             className="
-            text-lg
+            text-base
+            sm:text-lg
             md:text-xl
-            text-gray-100
-            mt-8
+            text-gray-200
+            mt-6
+            md:mt-8
             max-w-3xl
-            leading-8
+            leading-7
+            md:leading-8
+            font-serif
             "
           >
             We help businesses grow through premium websites, SEO,
@@ -103,14 +88,28 @@ export default function HomePage() {
             designed for performance and success.
           </motion.p>
 
+          {/* Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{
+              opacity: 0,
+              y: 40,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
             transition={{
               duration: 0.8,
               delay: 0.6,
             }}
-            className="flex flex-wrap items-center gap-5 mt-10"
+            className="
+            flex
+            flex-wrap
+            justify-center
+            items-center
+            gap-4
+            mt-10
+            "
           >
 
             <button
@@ -119,8 +118,10 @@ export default function HomePage() {
               hover:bg-white
               text-black
               font-semibold
-              px-8
-              py-4
+              px-6
+              md:px-8
+              py-3.5
+              md:py-4
               rounded-full
               transition-all
               duration-300
@@ -143,8 +144,10 @@ export default function HomePage() {
               hover:text-black
               text-white
               font-semibold
-              px-8
-              py-4
+              px-6
+              md:px-8
+              py-3.5
+              md:py-4
               rounded-full
               transition-all
               duration-300
@@ -158,154 +161,65 @@ export default function HomePage() {
         </div>
 
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+
       </section>
 
-    <div className="overflow-hidden">
+      <motion.section
+        className="overflow-hidden"
+        
+      >
+        <AboutSection />
+      </motion.section>
 
-  {/* ABOUT */}
-  <motion.section
-    className="overflow-hidden"
-    initial={{
-      opacity: 0,
-      x: -120,
-    }}
-    whileInView={{
-      opacity: 1,
-      x: 0,
-    }}
-    transition={{
-      duration: 1,
-      ease: [0.25, 1, 0.5, 1],
-    }}
-    viewport={{
-      once: true,
-      amount: 0.3,
-    }}
-  >
-    <AboutSection />
-  </motion.section>
+      <motion.section
+        className="overflow-hidden"
+        
+      >
+        <ServicesSection />
+      </motion.section>
 
-  {/* SERVICES */}
-  <motion.section
-    className="overflow-hidden"
-    initial={{
-      opacity: 0,
-      y: 120,
-      rotateX: 20,
-    }}
-    whileInView={{
-      opacity: 1,
-      y: 0,
-      rotateX: 0,
-    }}
-    transition={{
-      duration: 1.1,
-    }}
-    viewport={{
-      once: true,
-      amount: 0.2,
-    }}
-  >
-    <ServicesSection />
-  </motion.section>
+      <motion.section
+        className="overflow-hidden"
+        
+      >
+        <WhyChooseUsPage />
+      </motion.section>
 
-  <motion.section
-    className="overflow-hidden"
-    initial={{
-      opacity: 0,
-      x: -120,
-    }}
-    whileInView={{
-      opacity: 1,
-      x: 0,
-    }}
-    transition={{
-      duration: 1,
-      ease: [0.25, 1, 0.5, 1],
-    }}
-    viewport={{
-      once: true,
-      amount: 0.3,
-    }}
-  >
-    <WhyChooseUsPage />
-  </motion.section>
+      <motion.section
+        className="overflow-hidden"
+        initial={{
+          opacity: 0,
+          scale: 0.96,
+        }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1,
+        }}
+        viewport={{
+          once: true,
+          amount: 0.2,
+        }}
+      >
+        <FeaturesSlider />
+      </motion.section>
 
-  {/* FEATURES */}
-  <motion.section
-    className="overflow-hidden"
-    initial={{
-      opacity: 0,
-      scale: 0.92,
-      filter: "blur(10px)",
-    }}
-    whileInView={{
-      opacity: 1,
-      scale: 1,
-      filter: "blur(0px)",
-    }}
-    transition={{
-      duration: 1.2,
-    }}
-    viewport={{
-      once: true,
-      amount: 0.2,
-    }}
-  >
-    <FeaturesSlider />
-  </motion.section>
+      <motion.section
+        className="overflow-hidden"
+        
+      >
+        <TestimonialSection />
+      </motion.section>
 
-  {/* TESTIMONIAL */}
-  <motion.section
-    className="overflow-hidden"
-    initial={{
-      opacity: 0,
-      x: 120,
-    }}
-    whileInView={{
-      opacity: 1,
-      x: 0,
-    }}
-    transition={{
-      duration: 1,
-      ease: "easeOut",
-    }}
-    viewport={{
-      once: true,
-      amount: 0.2,
-    }}
-  >
-    <TestimonialSection />
-  </motion.section>
+      <motion.section
+        className="overflow-hidden"
+        
+      >
+        <ContactSection />
+      </motion.section>
 
-  {/* CONTACT */}
-  <motion.section
-    className="overflow-hidden"
-    initial={{
-      opacity: 0,
-      y: 100,
-      scale: 0.96,
-    }}
-    whileInView={{
-      opacity: 1,
-      y: 0,
-      scale: 1,
-    }}
-    transition={{
-      duration: 1,
-      ease: [0.22, 1, 0.36, 1],
-    }}
-    viewport={{
-      once: true,
-      amount: 0.2,
-    }}
-  >
-    <ContactSection />
-  </motion.section>
-
-</div>
-
-  
-    </>
+    </div>
   );
 }

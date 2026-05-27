@@ -36,16 +36,18 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="relative py-6 bg-white overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-white overflow-hidden">
+      
+      {/* Blur BG */}
+      <div className="absolute top-0 left-0 w-72 md:w-96 h-72 md:h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
 
-      <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
+      <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 font-serif overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10  font-serif">
-
+        {/* Heading */}
         <motion.div
           initial={{
             opacity: 0,
-            y: 80,
+            y: 60,
           }}
           whileInView={{
             opacity: 1,
@@ -55,29 +57,29 @@ export default function TestimonialSection() {
             duration: 0.8,
           }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-14 md:mb-20"
         >
-
-          <span className="uppercase tracking-[4px] text-yellow-500 text-md font-semibold">
+          <span className="uppercase tracking-[4px] text-yellow-500 text-xs md:text-sm font-semibold">
             Testimonials
           </span>
 
-          <h2 className="text-xl md:text-4xl font-bold text-[#0B1F3A] mt-6 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#0B1F3A] mt-4 md:mt-6 leading-tight">
             What Our Clients <br />
 
             <span className="text-yellow-500">
               Say About Us
             </span>
           </h2>
-
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        {/* Main Grid */}
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
 
+          {/* LEFT IMAGE */}
           <motion.div
             initial={{
               opacity: 0,
-              x: -80,
+              x: -60,
             }}
             whileInView={{
               opacity: 1,
@@ -90,34 +92,40 @@ export default function TestimonialSection() {
             className="relative"
           >
 
-            <div className="rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+            <div className="rounded-[25px] md:rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
                 alt=""
-                className="w-full h-[650px] object-cover"
+                className="w-full h-[300px] sm:h-[450px] md:h-[650px] object-cover"
               />
 
             </div>
 
+            {/* Floating Card */}
             <div
               className="
               absolute
-              bottom-10
-              -right-8
+              bottom-4
+              right-4
+              md:bottom-10
+              md:-right-6
               bg-[#0B1F3A]
-              px-8
-              py-6
-              rounded-3xl
+              px-5
+              py-4
+              md:px-8
+              md:py-6
+              rounded-2xl
+              md:rounded-3xl
               shadow-2xl
               "
             >
 
-              <h3 className="text-5xl font-bold text-yellow-400">
+              <h3 className="text-3xl md:text-5xl font-bold text-yellow-400">
                 4.9
               </h3>
 
-              <p className="text-white/70 mt-2 text-lg">
+              <p className="text-white/70 mt-1 md:mt-2 text-sm md:text-lg">
                 Client Rating
               </p>
 
@@ -125,10 +133,11 @@ export default function TestimonialSection() {
 
           </motion.div>
 
+          {/* RIGHT SLIDER */}
           <motion.div
             initial={{
               opacity: 0,
-              x: 80,
+              x: 60,
             }}
             whileInView={{
               opacity: 1,
@@ -138,6 +147,7 @@ export default function TestimonialSection() {
               duration: 0.8,
             }}
             viewport={{ once: true }}
+            className="w-full overflow-hidden"
           >
 
             <Swiper
@@ -147,7 +157,7 @@ export default function TestimonialSection() {
                 disableOnInteraction: false,
               }}
               loop={true}
-              className="h-full"
+              className="w-full"
             >
 
               {testimonials.map((item) => (
@@ -156,47 +166,52 @@ export default function TestimonialSection() {
                   <div
                     className="
                     bg-[#0B1F3A]
-                    rounded-[40px]
-                    p-12
+                    rounded-[25px]
+                    md:rounded-[40px]
+                    p-6
+                    md:p-12
                     text-white
                     relative
                     overflow-hidden
-                    min-h-[450px]
+                    min-h-[350px]
+                    md:min-h-[450px]
                     flex
                     flex-col
                     justify-between
                     "
                   >
 
-                    <div className="absolute top-0 right-0 w-72 h-72 bg-yellow-400/10 blur-[100px] rounded-full"></div>
+                    {/* Glow */}
+                    <div className="absolute top-0 right-0 w-48 md:w-72 h-48 md:h-72 bg-yellow-400/10 blur-[100px] rounded-full"></div>
 
                     <div>
 
-                      <div className="text-8xl text-yellow-400 leading-none">
+                      <div className="text-5xl md:text-8xl text-yellow-400 leading-none">
                         “
                       </div>
 
-                      <p className="text-xl leading-10 text-white/80 mt-6 relative z-10">
+                      <p className="text-base md:text-xl leading-8 md:leading-10 text-white/80 mt-4 md:mt-6 relative z-10">
                         {item.text}
                       </p>
 
                     </div>
 
-                    <div className="flex items-center gap-5 mt-10">
+                    {/* User */}
+                    <div className="flex items-center gap-4 md:gap-5 mt-8 md:mt-10">
 
                       <img
                         src={item.image}
                         alt={item.name}
-                        className="w-20 h-20 rounded-full object-cover border-4 border-yellow-400"
+                        className="w-14 h-14 md:w-20 md:h-20 rounded-full object-cover border-4 border-yellow-400 shrink-0"
                       />
 
                       <div>
 
-                        <h4 className="text-2xl font-bold">
+                        <h4 className="text-lg md:text-2xl font-bold">
                           {item.name}
                         </h4>
 
-                        <p className="text-yellow-400 mt-1">
+                        <p className="text-yellow-400 mt-1 text-sm md:text-base">
                           {item.role}
                         </p>
 

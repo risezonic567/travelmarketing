@@ -75,17 +75,10 @@ const Navbar = () => {
       className="
       relative
       overflow-hidden
-      rounded-2xl
-      bg-white/10
-      backdrop-blur-xl
-      border
-      border-white/10
       px-3
       py-2
       transition-all
       duration-500
-      group-hover:border-yellow-400/50
-      group-hover:bg-white/15
       "
     >
       <img

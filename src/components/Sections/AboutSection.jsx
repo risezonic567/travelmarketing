@@ -9,7 +9,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="relative py-32 bg-white overflow-hidden font-serif">
+    <section className="relative py-32 bg-white overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-400/10 blur-[140px] rounded-full"></div>
