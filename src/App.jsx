@@ -6,21 +6,26 @@ import ContactusPage from './pages/ContactusPage'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhyChooseUsPage from './components/Sections/WhychooseusSection'
+import BlogList from './pages/blog/BlogList'
+import BlogDetails from './pages/blog/BlogDetails'
 
 export default function App() {
   return (
-  
+
     <BrowserRouter>
-    <Navbar/>
-    <Routes>
+      <Navbar />
+      <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about-us' element={<AboutPage />} />
         <Route path='/contact-us' element={<ContactusPage />} />
         <Route path='/why-choose-us' element={<WhyChooseUsPage />} />
 
-    </Routes>
-    <Footer />
+        <Route path='/blog' element={<BlogList />} />
+        <Route path='/blog/:slug' element={<BlogDetails />} />
+
+      </Routes>
+      <Footer />
     </BrowserRouter>
-    
+
   )
 }

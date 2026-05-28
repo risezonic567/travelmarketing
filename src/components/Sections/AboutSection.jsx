@@ -124,25 +124,25 @@ export default function AboutSection() {
           </motion.div>
 
           {/* RIGHT IMAGES */}
-        <motion.div
-  initial={{
-    opacity: 0,
-    x: 100,
-  }}
-  whileInView={{
-    opacity: 1,
-    x: 0,
-  }}
-  transition={{
-    duration: 1,
-  }}
-  viewport={{ once: true }}
-  className="relative h-[520px] sm:h-[620px] lg:h-[700px] mt-16 lg:mt-0"
->
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: 100,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              duration: 1,
+            }}
+            viewport={{ once: true }}
+            className="relative h-[520px] sm:h-[620px] lg:h-[700px] mt-16 lg:mt-0"
+          >
 
-  {/* Main Image */}
-  <div
-    className="
+            {/* Main Image */}
+            <div
+              className="
     absolute
     top-0
     right-0
@@ -156,17 +156,17 @@ export default function AboutSection() {
     overflow-hidden
     shadow-[0_20px_60px_rgba(0,0,0,0.15)]
     "
-  >
-    <img
-      src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
-      alt=""
-      className="w-full h-full object-cover"
-    />
-  </div>
+            >
+              <img
+                src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
+                alt=""
+                className="w-[550px] h-[500px] border object-cover"
+              />
+            </div>
 
-  {/* Small Image */}
-  <div
-    className="
+            {/* Small Image */}
+            <div
+              className="
     absolute
     bottom-0
     left-0
@@ -183,24 +183,24 @@ export default function AboutSection() {
     border-white
     shadow-[0_20px_60px_rgba(0,0,0,0.15)]
     "
-  >
-    <img
-      src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1200&auto=format&fit=crop"
-      alt=""
-      className="w-full h-full object-cover"
-    />
-  </div>
+            >
+              <img
+                src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1200&auto=format&fit=crop"
+                alt=""
+                className="w-[370px] h-[300px] border object-cover"
+              />
+            </div>
 
-  {/* Floating Experience Card */}
-  <motion.div
-    animate={{
-      y: [0, -15, 0],
-    }}
-    transition={{
-      duration: 4,
-      repeat: Infinity,
-    }}
-    className="
+            {/* Floating Experience Card */}
+            <motion.div
+              animate={{
+                y: [0, -15, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+              }}
+              className="
     absolute
     top-[42%]
     left-4
@@ -214,19 +214,19 @@ export default function AboutSection() {
     sm:rounded-3xl
     shadow-[0_10px_40px_rgba(0,0,0,0.12)]
     "
-  >
+            >
 
-    <h3 className="text-3xl sm:text-5xl font-bold text-yellow-500">
-      10+
-    </h3>
+              <h3 className="text-3xl sm:text-5xl font-bold text-yellow-500">
+                10+
+              </h3>
 
-    <p className="text-[#0B1F3A] mt-1 sm:mt-2 text-sm sm:text-base font-medium">
-      Years Experience
-    </p>
+              <p className="text-[#0B1F3A] mt-1 sm:mt-2 text-sm sm:text-base font-medium">
+                Years Experience
+              </p>
 
-  </motion.div>
+            </motion.div>
 
-</motion.div>
+          </motion.div>
 
         </div>
 

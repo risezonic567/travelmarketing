@@ -2,12 +2,13 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
 import TestimonialSection from '../components/Testimonials'
+import ServicesMarquee from '../components/Sections/ServiceMarquee'
 
 
 export default function AboutPage() {
   return (
     <div>
-         <section className="relative h-screen w-full overflow-hidden font-serif">
+         <section className="relative h-screen w-full overflow-hidden">
 
         <img
           src="/images/Corporat1.jpeg"
@@ -20,20 +21,7 @@ export default function AboutPage() {
 
         <div className="relative z-10 flex flex-col justify-center mt-7 items-center h-full text-white px-6 text-center">
 
-          <motion.span
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="
-            uppercase
-            tracking-[4px]
-            text-yellow-400
-            text-sm
-            font-semibold 
-            "
-          >
-            Premium Business & Travel Solutions
-          </motion.span>
+         
 
           <motion.h1
             initial={{ opacity: 0, y: 70 }}
@@ -68,10 +56,11 @@ export default function AboutPage() {
             className="
             text-lg
             md:text-xl
-            text-gray-300
+            text-gray-100
             mt-8
             max-w-3xl
             leading-8
+            font-serif
             "
           >
             We help businesses grow through premium websites, SEO,
@@ -150,7 +139,7 @@ export default function AboutPage() {
           <img
             src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
             alt=""
-            className="w-full h-[650px] object-cover"
+            className="w-[600px] h-[500px] border object-cover"
           />
 
         </div>
@@ -259,6 +248,9 @@ export default function AboutPage() {
     </div>
   </div>
 </section>
+
+
+<ServicesMarquee/>
 <TestimonialSection/>
     </div>
   )

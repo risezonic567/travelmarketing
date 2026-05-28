@@ -97,7 +97,7 @@ export default function TestimonialSection() {
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
                 alt=""
-                className="w-full h-[300px] sm:h-[450px] md:h-[650px] object-cover"
+                className="w-[600px] border h-[300px] sm:h-[450px] md:h-[650px] object-cover"
               />
 
             </div>

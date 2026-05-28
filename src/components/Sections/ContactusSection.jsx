@@ -35,8 +35,12 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="min-h-screen bg-slate-950 mb-10 text-white py-11 px-4 flex items-center justify-center overflow-hidden">
+    <section className="min-h-screen bg-[#050038] mb-10 text-white py-11 px-4 flex items-center justify-center overflow-hidden">
       <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 relative z-10">
+
+          <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-yellow-500/20 blur-[140px]" />
+
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-pink-500/20 blur-[140px]" />
         
         <motion.div 
           className="lg:col-span-5 flex flex-col gap-6"
@@ -46,7 +50,7 @@ export default function ContactSection() {
         >
           <motion.div 
             variants={itemVariants}
-            className="p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-850 border border-slate-800/80 shadow-2xl relative overflow-hidden group"
+            className="p-8 rounded-3xl bg-gradient-to-br bg-white/10 to-slate-850 border border-slate-800/80 shadow-2xl relative overflow-hidden group"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all duration-500" />
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 leading-tight">
@@ -83,7 +87,7 @@ export default function ContactSection() {
         >
           <form 
             onSubmit={handleSubmit}
-            className="p-8 md:p-10 rounded-3xl bg-slate-900/90 border border-slate-800 backdrop-blur-md shadow-2xl flex flex-col gap-6 relative"
+            className="p-8 md:p-10 rounded-3xl bg-white/10 border border-slate-800 backdrop-blur-md shadow-2xl flex flex-col gap-6 relative"
           >
             <div className="absolute top-0 left-1/4 right-1/4 h-[1px] bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
 
@@ -98,7 +102,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Enter Name"
-                className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300"
+                className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300"
               />
             </div>
 
@@ -119,7 +123,7 @@ export default function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone-number"
-                  className="w-full bg-transparent px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none"
+                  className="w-full bg-transparent px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none"
                 />
               </div>
             </div>
@@ -135,7 +139,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email Id"
-                className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300"
+                className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300"
               />
             </div>
 
@@ -150,7 +154,7 @@ export default function ContactSection() {
                 value={formData.message}  
                 onChange={handleChange}
                 placeholder="Type your message here ..."
-                className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300 resize-none"
+                className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300 resize-none"
               />
             </div>
 

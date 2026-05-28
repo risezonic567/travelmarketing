@@ -7,10 +7,9 @@ import { ArrowRight } from "lucide-react";
 import ContactSection from "../components/Sections/ContactusSection";
 import TestimonialSection from "../components/Testimonials";
 import WhyChooseUsPage from "../components/Sections/WhychooseusSection";
+import OurExperts from "../components/Sections/OurExpertSection";
 
 export default function HomePage() {
-
-  
 
   return (
     <div className="overflow-x-hidden bg-white">
@@ -18,7 +17,7 @@ export default function HomePage() {
       <section className="relative min-h-screen w-full overflow-hidden">
 
         <img
-          src="/images/Corporat1.jpeg"
+          src="/images/Travel Home PAGE Banneer.jpg.jpeg"
           alt=""
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
@@ -43,8 +42,8 @@ export default function HomePage() {
             className="
             text-4xl
             sm:text-5xl
-            md:text-6xl
-            lg:text-7xl
+            md:text-5xl
+            lg:text-5xl
             font-bold
             leading-tight
             max-w-5xl
@@ -160,7 +159,7 @@ export default function HomePage() {
 
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white/80 to-transparent"></div>
 
       </section>
 
@@ -204,6 +203,12 @@ export default function HomePage() {
         }}
       >
         <FeaturesSlider />
+      </motion.section>
+      
+      <motion.section
+      className="overflow-hidden"
+      >
+        <OurExperts/>
       </motion.section>
 
       <motion.section

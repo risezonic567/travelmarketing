@@ -150,7 +150,7 @@ export default function WhyChooseUsPage() {
                 <img
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
                   alt=""
-                  className="w-full h-[650px] object-cover"
+                  className="w-[600px] h-[350px] border object-cover"
                 />
 
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> */}

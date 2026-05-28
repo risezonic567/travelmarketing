@@ -4,10 +4,15 @@ import { Link } from "react-router-dom";
 
 
 import React from "react";
+import FooterServices from "./Sections/FooterServicesMarquee";
+
 
 export default function Footer() {
   return (
+    <>
+     <FooterServices/>
     <footer className="bg-[#0B1F3A]  text-white pt-14 pb-6 font-serif ">
+   
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 md:grid-cols-2 gap-10">
         
         <div>
@@ -156,5 +161,6 @@ export default function Footer() {
         © 2026 GlobalWay. All Rights Reserved.
       </div>
     </footer>
+    </>
   );
 }

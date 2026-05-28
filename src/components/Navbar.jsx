@@ -2,11 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown, Menu, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
-
+import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [openService, setOpenService] = useState(null);
+
+  const location = useLocation();
+  
+ const isBlogDetails =
+  location.pathname.startsWith("/blog/");
 
   const [showNavbar, setShowNavbar] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
@@ -57,22 +62,33 @@ const Navbar = () => {
   )
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${showNavbar ? "translate-y-0" : "-translate-y-full"
-        } ${lastScrollY > 50
-          ? "bg-black/80 backdrop-blur-md "
-          : "bg-transparent"
-        }`}
-    >
+   <nav
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-500
+  
+  ${
+    showNavbar
+      ? "translate-y-0"
+      : "-translate-y-full"
+  }
+
+  ${
+    isBlogDetails
+      ? "bg-black backdrop-blur-md shadow-lg"
+      : lastScrollY > 50
+      ? "bg-black/80 backdrop-blur-md"
+      : "bg-transparent"
+  }
+  `}
+>
 
       <div className="max-w-[1300px]  mx-auto px-10 py-5 flex items-center justify-between">
 
-       <div className="text-2xl font-semibold tracking-wide flex items-center">
-  <Link to="/" className="flex items-center gap-3 group">
-    
-    {/* Logo Box */}
-    <div
-      className="
+        <div className="text-2xl font-semibold tracking-wide flex items-center">
+          <Link to="/" className="flex items-center gap-3 group">
+
+            {/* Logo Box */}
+            <div
+              className="
       relative
       overflow-hidden
       px-3
@@ -80,11 +96,11 @@ const Navbar = () => {
       transition-all
       duration-500
       "
-    >
-      <img
-        src="/images/logo/dfgh.png"
-        alt="Logo"
-        className="
+            >
+              <img
+                src="/images/logo/dfgh.png"
+                alt="Logo"
+                className="
         h-12
         w-auto
         object-contain
@@ -92,11 +108,11 @@ const Navbar = () => {
         duration-500
         group-hover:scale-105
         "
-      />
+              />
 
-      {/* Glow */}
-      <div
-        className="
+              {/* Glow */}
+              <div
+                className="
         absolute
         inset-0
         bg-gradient-to-r
@@ -108,13 +124,13 @@ const Navbar = () => {
         transition-all
         duration-700
         "
-      ></div>
-    </div>
+              ></div>
+            </div>
 
-   
 
-  </Link>
-</div>
+
+          </Link>
+        </div>
 
         <div className="hidden md:flex items-center gap-12 text-[18px] font-serif tracking-wide">
 
