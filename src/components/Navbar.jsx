@@ -43,6 +43,8 @@ const Navbar = () => {
           { name: "WordPress Website Development", path: "/" },
           { name: "Corporate Website Development", path: "/" },
           { name: "CMS Website Development", path: "/" },
+          { name: "Graphic Design", path: "/" },
+          {name:"E-commerce Website Development", path: "/"},
         ]
       },
 
@@ -63,6 +65,7 @@ const Navbar = () => {
         {name:"Travelpayouts API Integration", path: "/"}, 
       ],
       path: "/" },
+
     { Name: "Mobile App Development", 
       subMenu: [
         {name:"Mobile App Development", path: "/"},
@@ -71,19 +74,42 @@ const Navbar = () => {
       ],
       
       path: "/" },
+
+        { Name:"Digital Marketing",
+      subMenu: [
+        { name: "Content Marketing", path: "/" },
+        { name: "Email Marketing", path: "/" },
+        { name: "Data Science & Analytics", path: "/" },
+        { name: "Lead Generation", path: "/" },
+        { name: "Digital Marketing", path: "/" },
+        { name: "Social Media Marketing", path: "/" },
+         {name:"Search Engine Optimization", path: "/"},
+        {name:"Shopify SEO", path: "/"},
+        {name:"AI Optimization", path: "/"},
+
+      ]
+    },
     {
       Name: "Ads", path: "/",
       subMenu: [
-        { name: "Google Ads", path: "/" },
+        { name: "Google Ads -(PPC Advertising)", path: "/" },
         { name: "Facebook Ads", path: "/" },
         { name: "Instagram Ads", path: "/" },
         { name: "LinkedIn Ads", path: "/" },
       ],
 
     },
-    { Name: "API Integration", path: "/" },
-    { Name: "CRM ", path: "/" },
-    { Name: "Local SEO", path: "/" }
+
+    { Name: "SEO", 
+      subMenu: [
+        { name: "On-Page SEO", path: "/" },
+        { name: "Off-Page SEO", path: "/" },
+        { name: "Technical SEO", path: "/" },
+        { name: "Local SEO", path: "/" },
+       
+      ],
+      path: "/" 
+    }
   ]
 
   const NavItem = ({ to, children }) => (
