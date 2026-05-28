@@ -9,9 +9,9 @@ const Navbar = () => {
   const [openService, setOpenService] = useState(null);
 
   const location = useLocation();
-  
- const isBlogDetails =
-  location.pathname.startsWith("/blog/");
+
+  const isBlogDetails =
+    location.pathname.startsWith("/blog/");
 
   const [showNavbar, setShowNavbar] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
@@ -35,9 +35,42 @@ const Navbar = () => {
 
 
   const servicesList = [
-    { Name: "Web Design & Development", path: "/" },
-    { Name: "Content Marketing", path: "/" },
-    { Name: "Social Media Marketing", path: "/" },
+      {
+        Name:"Web Designing", path: "/",
+        subMenu: [
+          { name: "Website Design", path: "/" },
+          { name: "Web Portal Design", path: "/" },
+          { name: "WordPress Website Development", path: "/" },
+          { name: "Corporate Website Development", path: "/" },
+          { name: "CMS Website Development", path: "/" },
+        ]
+      },
+
+    { Name: "Web Developments",
+        subMenu: [
+          { name: "Custom API Integration", path: "/" },
+          { name: "CMS Website Development", path: "/" },
+          { name: "CRM Website Development", path: "/" },
+          { name: "Hotel Management System", path: "/" },
+        ],
+      },
+
+    { Name: "API Integration",
+      subMenu: [
+        {name:"Amadeus API Integration", path: "/"},
+        {name:"Car Rental API Integration", path: "/"},
+        {name:"Hotel API Integration", path: "/"},
+        {name:"Travelpayouts API Integration", path: "/"}, 
+      ],
+      path: "/" },
+    { Name: "Mobile App Development", 
+      subMenu: [
+        {name:"Mobile App Development", path: "/"},
+        {name:"iOS App Development", path: "/"},
+        {name:"Android App Development", path: "/"},
+      ],
+      
+      path: "/" },
     {
       Name: "Ads", path: "/",
       subMenu: [
@@ -49,6 +82,7 @@ const Navbar = () => {
 
     },
     { Name: "API Integration", path: "/" },
+    { Name: "CRM ", path: "/" },
     { Name: "Local SEO", path: "/" }
   ]
 
@@ -62,24 +96,22 @@ const Navbar = () => {
   )
 
   return (
-   <nav
-  className={`fixed top-0 left-0 w-full z-50 transition-all duration-500
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500
   
-  ${
-    showNavbar
-      ? "translate-y-0"
-      : "-translate-y-full"
-  }
+  ${showNavbar
+          ? "translate-y-0"
+          : "-translate-y-full"
+        }
 
-  ${
-    isBlogDetails
-      ? "bg-black backdrop-blur-md shadow-lg"
-      : lastScrollY > 50
-      ? "bg-black/80 backdrop-blur-md"
-      : "bg-transparent"
-  }
+  ${isBlogDetails
+          ? "bg-black backdrop-blur-md shadow-lg"
+          : lastScrollY > 50
+            ? "bg-black/80 backdrop-blur-md"
+            : "bg-transparent"
+        }
   `}
->
+    >
 
       <div className="max-w-[1300px]  mx-auto px-10 py-5 flex items-center justify-between">
 

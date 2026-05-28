@@ -101,7 +101,7 @@ export default function Footer() {
               <Link to="/about-us" className="hover:text-yellow-400 duration-300 block">About Us</Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-yellow-400 duration-300 block">Services</Link>
+              <Link to="/blog" className="hover:text-yellow-400 duration-300 block">Blog</Link>
             </li>
             <li>
               <Link to="/tour-packages" className="hover:text-yellow-400 duration-300 block">Tour Packages</Link>

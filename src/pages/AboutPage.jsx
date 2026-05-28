@@ -137,9 +137,9 @@ export default function AboutPage() {
         <div className="rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
           <img
-            src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
+            src="/images/About Page intro w-600px h-500px.jpg.jpeg"
             alt=""
-            className="w-[600px] h-[500px] border object-cover"
+            className="w-full h-full object-cover"
           />
 
         </div>
@@ -185,14 +185,14 @@ export default function AboutPage() {
 
         </h2>
 
-        <p className="text-gray-600 text-lg leading-9 mt-8">
+        <p className="text-gray-600 text-lg font-serif leading-9 mt-8">
           We are passionate about delivering unforgettable travel and
           business experiences with innovation, comfort, and trust.
           Our goal is to help clients explore the world through premium
           services, modern solutions, and personalized support.
         </p>
 
-        <p className="text-gray-600 text-lg leading-9 mt-6">
+        <p className="text-gray-600 text-lg font-serif leading-9 mt-6">
           From luxury travel planning to digital business growth,
           we combine creativity, technology, and customer-focused
           strategies to build long-term relationships and exceptional journeys.
@@ -206,7 +206,7 @@ export default function AboutPage() {
               24/7 Support
             </h4>
 
-            <p className="text-gray-600 mt-3 leading-7">
+            <p className="text-gray-600 mt-3 font-serif leading-7">
               Dedicated assistance anytime for smooth travel experiences.
             </p>
 
@@ -218,7 +218,7 @@ export default function AboutPage() {
               Trusted Service
             </h4>
 
-            <p className="text-white/70 mt-3 leading-7">
+            <p className="text-white/70 mt-3 font-serif leading-7">
               Thousands of happy clients trust our premium solutions.
             </p>
 

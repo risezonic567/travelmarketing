@@ -11,15 +11,12 @@ export default function AboutSection() {
   return (
     <section className="relative py-32 bg-white overflow-hidden">
 
-      {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-400/10 blur-[140px] rounded-full"></div>
 
       <div className="max-w-[1400px] mx-auto px-6 relative z-10">
 
-        {/* TOP LAYOUT */}
         <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-          {/* LEFT CONTENT */}
           <motion.div
             initial={{
               opacity: 0,
@@ -56,7 +53,6 @@ export default function AboutSection() {
               designed for unforgettable journeys.
             </p>
 
-            {/* Features */}
             <div className="space-y-6 mt-12">
 
               <div className="flex items-center gap-5">
@@ -97,7 +93,6 @@ export default function AboutSection() {
 
             </div>
 
-            {/* Button */}
             <button
               className="
               mt-12
@@ -123,7 +118,6 @@ export default function AboutSection() {
 
           </motion.div>
 
-          {/* RIGHT IMAGES */}
           <motion.div
             initial={{
               opacity: 0,
@@ -140,7 +134,6 @@ export default function AboutSection() {
             className="relative h-[520px] sm:h-[620px] lg:h-[700px] mt-16 lg:mt-0"
           >
 
-            {/* Main Image */}
             <div
               className="
     absolute
@@ -158,40 +151,22 @@ export default function AboutSection() {
     "
             >
               <img
-                src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=1200&auto=format&fit=crop"
+                src="/images/Home About Intro w-550px h-500px.jpg.jpeg"
                 alt=""
-                className="w-[550px] h-[500px] border object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
 
-            {/* Small Image */}
             <div
-              className="
-    absolute
-    bottom-0
-    left-0
-    w-[65%]
-    sm:w-[55%]
-    h-[220px]
-    sm:h-[280px]
-    lg:h-[320px]
-    rounded-[22px]
-    sm:rounded-[32px]
-    overflow-hidden
-    border-[5px]
-    sm:border-[8px]
-    border-white
-    shadow-[0_20px_60px_rgba(0,0,0,0.15)]
-    "
+              className=" absolute bottom-0 left-0 w-[65%] sm:w-[55%] h-[220px] sm:h-[280px] lg:h-[320px] rounded-[22px] sm:rounded-[32px] overflow-hidden border-[5px] sm:border-[8px] border-whiteshadow-[0_20px_60px_rgba(0,0,0,0.15)]"
             >
               <img
-                src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?q=80&w=1200&auto=format&fit=crop"
+                src="/images/Home About Intro w-370px h-300px.jpg.jpeg"
                 alt=""
-                className="w-[370px] h-[300px] border object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
 
-            {/* Floating Experience Card */}
             <motion.div
               animate={{
                 y: [0, -15, 0],
@@ -200,20 +175,7 @@ export default function AboutSection() {
                 duration: 4,
                 repeat: Infinity,
               }}
-              className="
-    absolute
-    top-[42%]
-    left-4
-    sm:left-10
-    bg-white
-    px-5
-    sm:px-8
-    py-4
-    sm:py-6
-    rounded-2xl
-    sm:rounded-3xl
-    shadow-[0_10px_40px_rgba(0,0,0,0.12)]
-    "
+              className="absolute top-[42%] left-4 sm:left-10 bg-white px-5 sm:px-8 py-4 sm:py-6 rounded-2xl sm:rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.12)]"
             >
 
               <h3 className="text-3xl sm:text-5xl font-bold text-yellow-500">
@@ -230,10 +192,8 @@ export default function AboutSection() {
 
         </div>
 
-        {/* BOTTOM INFO BLOCKS */}
         <div className="grid lg:grid-cols-2 gap-8 mt-32">
 
-          {/* LEFT BLOCK */}
           <motion.div
             whileHover={{
               y: -8,

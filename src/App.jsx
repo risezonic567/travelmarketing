@@ -8,11 +8,13 @@ import Footer from './components/Footer'
 import WhyChooseUsPage from './components/Sections/WhychooseusSection'
 import BlogList from './pages/blog/BlogList'
 import BlogDetails from './pages/blog/BlogDetails'
+import ScrollTop from './components/ScrollTop'
 
 export default function App() {
   return (
 
     <BrowserRouter>
+    <ScrollTop/>
       <Navbar />
       <Routes>
         <Route path='/' element={<HomePage />} />

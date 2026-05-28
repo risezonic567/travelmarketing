@@ -95,9 +95,9 @@ export default function TestimonialSection() {
             <div className="rounded-[25px] md:rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                src="/images/testimonial.jpg.jpeg"
                 alt=""
-                className="w-[600px] border h-[300px] sm:h-[450px] md:h-[650px] object-cover"
+                className="w-full border h-[300px] sm:h-[450px] md:h-[650px] object-cover"
               />
 
             </div>

@@ -148,9 +148,9 @@ export default function WhyChooseUsPage() {
               <div className="relative rounded-[40px] overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.25)]">
 
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                  src="/images/Why Choose Us w-600px h-350px.jpg.jpeg"
                   alt=""
-                  className="w-[600px] h-[350px] border object-cover"
+                  className="w-full  h-full border object-cover"
                 />
 
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> */}

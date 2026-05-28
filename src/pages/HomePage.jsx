@@ -8,6 +8,9 @@ import ContactSection from "../components/Sections/ContactusSection";
 import TestimonialSection from "../components/Testimonials";
 import WhyChooseUsPage from "../components/Sections/WhychooseusSection";
 import OurExperts from "../components/Sections/OurExpertSection";
+import { Link } from "react-router-dom";
+
+
 
 export default function HomePage() {
 
@@ -22,7 +25,7 @@ export default function HomePage() {
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
 
         <div className="relative z-10 flex flex-col justify-center items-center min-h-screen text-white px-4 md:px-6 text-center">
 
@@ -41,7 +44,7 @@ export default function HomePage() {
             }}
             className="
             text-4xl
-            sm:text-5xl
+            sm:text-3xl
             md:text-5xl
             lg:text-5xl
             font-bold
@@ -152,7 +155,7 @@ export default function HomePage() {
               duration-300
               "
             >
-              Contact Us
+              <Link to="/contact-us">Contact Us</Link>
             </button>
 
           </motion.div>
