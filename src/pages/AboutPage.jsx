@@ -8,10 +8,10 @@ import ServicesMarquee from '../components/Sections/ServiceMarquee'
 export default function AboutPage() {
   return (
     <div>
-         <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-screen w-full overflow-hidden">
 
         <img
-          src="/images/Corporat1.jpeg"
+          src="/images/TravelAboutusBanner.jpg.jpeg"
           alt=""
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
@@ -21,7 +21,7 @@ export default function AboutPage() {
 
         <div className="relative z-10 flex flex-col justify-center mt-7 items-center h-full text-white px-6 text-center">
 
-         
+
 
           <motion.h1
             initial={{ opacity: 0, y: 70 }}
@@ -31,8 +31,8 @@ export default function AboutPage() {
               delay: 0.2,
             }}
             className="
-            text-5xl
-            md:text-7xl
+            text-4xl
+            md:text-5xl
             font-bold
             leading-tight
             mt-6
@@ -124,28 +124,28 @@ export default function AboutPage() {
 
       </section>
 
-            <section className="py-28 bg-white overflow-hidden relative">
+      <section className="py-28 bg-white overflow-hidden relative">
 
-  <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
 
-  <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
 
-    <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-      <div className="relative">
+            <div className="relative">
 
-        <div className="rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+              <div className="rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
-          <img
-            src="/images/About Page intro w-600px h-500px.jpg.jpeg"
-            alt=""
-            className="w-full h-full object-cover"
-          />
+                <img
+                  src="/images/About Page intro w-600px h-500px.jpg.jpeg"
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
 
-        </div>
+              </div>
 
-        <div
-          className="
+              <div
+                className="
           absolute
           bottom-10
           -right-10
@@ -156,77 +156,77 @@ export default function AboutPage() {
           rounded-3xl
           shadow-2xl
           "
-        >
+              >
 
-          <h3 className="text-5xl font-bold text-yellow-400">
-            10+
-          </h3>
+                <h3 className="text-5xl font-bold text-yellow-400">
+                  10+
+                </h3>
 
-          <p className="mt-2 text-lg text-white/80">
-            Years Experience
-          </p>
+                <p className="mt-2 text-lg text-white/80">
+                  Years Experience
+                </p>
 
-        </div>
+              </div>
 
-      </div>
+            </div>
 
-      <div>
+            <div>
 
-        <span className="uppercase tracking-[4px] text-yellow-500 text-sm font-semibold">
-          About Our Company
-        </span>
+              <span className="uppercase tracking-[4px] text-yellow-500 text-sm font-semibold">
+                About Our Company
+              </span>
 
-        <h2 className="text-5xl md:text-6xl font-bold text-[#0B1F3A] leading-tight mt-6">
-          Creating Premium <br />
+              <h2 className="text-5xl md:text-6xl font-bold text-[#0B1F3A] leading-tight mt-6">
+                Creating Premium <br />
 
-          <span className="text-yellow-500">
-            Travel Experiences
-          </span>
+                <span className="text-yellow-500">
+                  Travel Experiences
+                </span>
 
-        </h2>
+              </h2>
 
-        <p className="text-gray-600 text-lg font-serif leading-9 mt-8">
-          We are passionate about delivering unforgettable travel and
-          business experiences with innovation, comfort, and trust.
-          Our goal is to help clients explore the world through premium
-          services, modern solutions, and personalized support.
-        </p>
+              <p className="text-gray-600 text-lg font-serif leading-9 mt-8">
+                We are passionate about delivering unforgettable travel and
+                business experiences with innovation, comfort, and trust.
+                Our goal is to help clients explore the world through premium
+                services, modern solutions, and personalized support.
+              </p>
 
-        <p className="text-gray-600 text-lg font-serif leading-9 mt-6">
-          From luxury travel planning to digital business growth,
-          we combine creativity, technology, and customer-focused
-          strategies to build long-term relationships and exceptional journeys.
-        </p>
+              <p className="text-gray-600 text-lg font-serif leading-9 mt-6">
+                From luxury travel planning to digital business growth,
+                we combine creativity, technology, and customer-focused
+                strategies to build long-term relationships and exceptional journeys.
+              </p>
 
-        <div className="grid sm:grid-cols-2 gap-6 mt-12">
+              <div className="grid sm:grid-cols-2 gap-6 mt-12">
 
-          <div className="bg-gray-50 rounded-3xl p-6 border border-gray-100">
+                <div className="bg-gray-50 rounded-3xl p-6 border border-gray-100">
 
-            <h4 className="text-2xl font-bold text-[#0B1F3A]">
-              24/7 Support
-            </h4>
+                  <h4 className="text-2xl font-bold text-[#0B1F3A]">
+                    24/7 Support
+                  </h4>
 
-            <p className="text-gray-600 mt-3 font-serif leading-7">
-              Dedicated assistance anytime for smooth travel experiences.
-            </p>
+                  <p className="text-gray-600 mt-3 font-serif leading-7">
+                    Dedicated assistance anytime for smooth travel experiences.
+                  </p>
 
-          </div>
+                </div>
 
-          <div className="bg-[#0B1F3A] rounded-3xl p-6">
+                <div className="bg-[#0B1F3A] rounded-3xl p-6">
 
-            <h4 className="text-2xl font-bold text-yellow-400">
-              Trusted Service
-            </h4>
+                  <h4 className="text-2xl font-bold text-yellow-400">
+                    Trusted Service
+                  </h4>
 
-            <p className="text-white/70 mt-3 font-serif leading-7">
-              Thousands of happy clients trust our premium solutions.
-            </p>
+                  <p className="text-white/70 mt-3 font-serif leading-7">
+                    Thousands of happy clients trust our premium solutions.
+                  </p>
 
-          </div>
+                </div>
 
-        </div>
+              </div>
 
-        {/* <button
+              {/* <button
           className="
           mt-12
           bg-yellow-400
@@ -243,15 +243,15 @@ export default function AboutPage() {
         >
           Explore More
         </button>*/}
-      </div>
+            </div>
 
-    </div>
-  </div>
-</section>
+          </div>
+        </div>
+      </section>
 
 
-<ServicesMarquee/>
-<TestimonialSection/>
+      <ServicesMarquee />
+      <TestimonialSection />
     </div>
   )
 }
