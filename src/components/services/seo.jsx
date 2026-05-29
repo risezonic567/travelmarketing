@@ -1,18 +1,17 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-import { servicesData } from "../../data/Webrelated.js";
-
 import {
   ArrowRight,
   HelpCircle
 } from "lucide-react";
 import { useParams } from "react-router-dom";
+import { seoData } from "../../data/seo";
 
-export default function ServiceDetails() {
+export default function SeoDetails() {
   const { slug } = useParams();
 
-  const currentService = servicesData.find(
+  const currentService = seoData.find(
     (service) => service.slug === slug
   );
 

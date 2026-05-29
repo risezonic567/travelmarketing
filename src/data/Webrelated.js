@@ -11,7 +11,7 @@ export const servicesData = [
     hero: {
       title: "Website Designing Company in Delhi",
       subtitle: "Modern, responsive and high-converting business websites for startups and enterprises.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400",
+      image: "/images/webdevelopment/website-design.jpg.jpeg",
       primaryButton: "Get Free Quote",
       secondaryButton: "Call Now"
     },
@@ -88,7 +88,7 @@ export const servicesData = [
     hero: {
       title: "Website Designing Company in Delhi",
       subtitle: "Modern, responsive and high-converting business websites for startups and enterprises.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400",
+      image: "/images/webdevelopment/web-portal-design.jpg.jpeg",
       primaryButton: "Get Free Quote",
       secondaryButton: "Call Now"
     },
@@ -165,7 +165,7 @@ export const servicesData = [
     hero: {
       title: "Website Designing Company in Delhi",
       subtitle: "Modern, responsive and high-converting business websites for startups and enterprises.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400",
+      image: "/images/webdevelopment/wordpress-website-development.jpg.jpeg",
       primaryButton: "Get Free Quote",
       secondaryButton: "Call Now"
     },
@@ -241,7 +241,7 @@ export const servicesData = [
     hero: {
       title: "Website Designing Company in Delhi",
       subtitle: "Modern, responsive and high-converting business websites for startups and enterprises.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400",
+      image: "/images/webdevelopment/corporate-website-development.jpg.jpeg",
       primaryButton: "Get Free Quote",
       secondaryButton: "Call Now"
     },
@@ -317,7 +317,7 @@ export const servicesData = [
     hero: {
       title: "Website Designing Company in Delhi",
       subtitle: "Modern, responsive and high-converting business websites for startups and enterprises.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400",
+      image: "/images/webdevelopment/graphic-design.jpg.jpeg",
       primaryButton: "Get Free Quote",
       secondaryButton: "Call Now"
     },
@@ -382,9 +382,6 @@ export const servicesData = [
   },
 
 
-  
-
-
    {
     id: 6,
     slug: "e-commerce-website-development",
@@ -397,7 +394,7 @@ export const servicesData = [
     hero: {
       title: "Website Designing Company in Delhi",
       subtitle: "Modern, responsive and high-converting business websites for startups and enterprises.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400",
+      image: "/images/webdevelopment/wordpress-website-development.jpg.jpeg",
       primaryButton: "Get Free Quote",
       secondaryButton: "Call Now"
     },

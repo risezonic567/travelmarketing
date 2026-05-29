@@ -103,9 +103,9 @@ export default function Footer() {
             <li>
               <Link to="/blog" className="hover:text-yellow-400 duration-300 block">Blog</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/tour-packages" className="hover:text-yellow-400 duration-300 block">Tour Packages</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/contact-us" className="hover:text-yellow-400 duration-300 block">Contact</Link>
             </li>
@@ -118,10 +118,10 @@ export default function Footer() {
           </h2>
           <ul className="space-y-4 text-gray-300">
             <li>
-              <Link to="/google-ads" className="hover:text-yellow-400 duration-300 block">Google Ads</Link>
+              <Link to="/services/google-ads" className="hover:text-yellow-400 duration-300 block">Google Ads</Link>
             </li>
             <li>
-              <Link to="/website-design" className="hover:text-yellow-400 duration-300 block">Website Design</Link>
+              <Link to="/services/website-design" className="hover:text-yellow-400 duration-300 block">Website Design</Link>
             </li>
             <li>
               <Link to="/seo-services" className="hover:text-yellow-400 duration-300 block">SEO Services</Link>
@@ -129,9 +129,9 @@ export default function Footer() {
             <li>
               <Link to="/business-consulting" className="hover:text-yellow-400 duration-300 block">Business Consulting</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/holiday-packages" className="hover:text-yellow-400 duration-300 block">Holiday Packages</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

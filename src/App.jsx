@@ -10,6 +10,9 @@ import BlogList from './pages/blog/BlogList'
 import BlogDetails from './pages/blog/BlogDetails'
 import ScrollTop from './components/ScrollTop'
 import ServiceDetails from './components/services/webdevelopmentDetails'
+import MarketingDetails from './components/services/marketingservices'
+import AdsDetails from './components/services/ads'
+import SeoDetails from './components/services/seo'
 
 
 
@@ -30,6 +33,12 @@ export default function App() {
         <Route path='/blog/:slug' element={<BlogDetails />} />
 
         <Route path='/services/:slug' element={<ServiceDetails />} />
+        <Route path='/marketing-services/:slug' element={<MarketingDetails />} />
+        <Route path='/ads-services/:slug' element={<AdsDetails />} />
+        <Route path='/seo/:slug' element={<SeoDetails />} />
+
+
+
    
 
       </Routes>

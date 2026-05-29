@@ -36,7 +36,7 @@ const Navbar = () => {
 
   const servicesList = [
     {
-      Name: "Web Designing", path: "/",
+      Name: "Web Designing",
       subMenu: [
         { name: "Website Design", path: "/services/website-design" },
         { name: "Web Portal Design", path: "/services/web-portal-design" },
@@ -65,7 +65,6 @@ const Navbar = () => {
         { name: "Hotel API Integration", path: "/services/hotel-api-integration" },
         { name: "Travelpayouts API Integration", path: "/services/travelpayouts-api-integration" },
       ],
-      path: "/"
     },
 
     {
@@ -75,32 +74,30 @@ const Navbar = () => {
         { name: "iOS App Development", path: "/services/ios-app-development" },
         { name: "Android App Development", path: "/services/android-app-development" },
       ],
-
-      path: "/"
     },
 
     {
       Name: "Digital Marketing",
       subMenu: [
-        { name: "Content Marketing", path: "/services/content-marketing" },
-        { name: "Email Marketing", path: "/services/email-marketing" },
-        { name: "Data Science & Analytics", path: "/services/data-science-&-analytics" },
-        { name: "Lead Generation", path: "/services/lead-generation" },
-        { name: "Digital Marketing", path: "/services/digital-marketing" },
-        { name: "Social Media Marketing", path: "/services/social-media-marketing" },
-        { name: "Search Engine Optimization", path: "/services/search-engine-optimization" },
-        { name: "Shopify SEO", path: "/services/shopify-seo" },
-        { name: "AI Optimization", path: "/services/ai-optimization" },
+        { name: "Content Marketing", path: "/marketing-services/content-marketing" },
+        { name: "Email Marketing", path: "/marketing-services/email-marketing" },
+        { name: "Data Science & Analytics", path: "/marketing-services/data-science-analytics" },
+        { name: "Lead Generation", path: "/marketing-services/lead-generation" },
+        { name: "Digital Marketing", path: "/marketing-services/digital-marketing" },
+        { name: "Social Media Marketing", path: "/marketing-services/social-media-marketing" },
+        { name: "Search Engine Optimization", path: "/marketing-services/search-engine-optimization" },
+        { name: "Shopify SEO", path: "/marketing-services/shopify-seo" },
+        { name: "AI Optimization", path: "/marketing-services/ai-optimization" },
 
-      ]
+      ],
     },
     {
-      Name: "Ads", path: "/",
+      Name: "Ads",
       subMenu: [
-        { name: "Google Ads -(PPC Advertising)", path: "/services/google-ads" },
-        { name: "Facebook Ads", path: "/services/facebook-ads" },
-        { name: "Instagram Ads", path: "/services/instagram-ads" },
-        { name: "LinkedIn Ads", path: "/services/linkedin-ads" },
+        { name: "Google Ads -(PPC Advertising)", path: "/ads-services/google-ads" },
+        { name: "Facebook Ads", path: "/ads-services/facebook-ads" },
+        { name: "Instagram Ads", path: "/ads-services/instagram-ads" },
+        { name: "LinkedIn Ads", path: "/ads-services/linkedin-ads" },
       ],
 
     },
@@ -108,13 +105,13 @@ const Navbar = () => {
     {
       Name: "SEO",
       subMenu: [
-        { name: "On-Page SEO", path: "/services/on-page-seo" },
-        { name: "Off-Page SEO", path: "/services/off-page-seo" },
-        { name: "Technical SEO", path: "/services/technical-seo" },
-        { name: "Local SEO", path: "/services/local-seo" },
+        { name: "On-Page SEO", path: "/seo/on-page-seo" },
+        { name: "Off-Page SEO", path: "/seo/off-page-seo" },
+        { name: "Technical SEO", path: "/seo/technical-seo" },
+        { name: "Local SEO", path: "/seo/local-seo" },
 
       ],
-      path: "/"
+      
     }
   ]
 

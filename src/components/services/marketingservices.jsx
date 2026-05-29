@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-import { servicesData } from "../../data/Webrelated.js";
+import { marketingData } from "../../data/marketingrelated";
 
 import {
   ArrowRight,
@@ -9,10 +9,10 @@ import {
 } from "lucide-react";
 import { useParams } from "react-router-dom";
 
-export default function ServiceDetails() {
+export default function MarketingDetails() {
   const { slug } = useParams();
 
-  const currentService = servicesData.find(
+  const currentService = marketingData.find(
     (service) => service.slug === slug
   );
 
