@@ -9,6 +9,9 @@ import WhyChooseUsPage from './components/Sections/WhychooseusSection'
 import BlogList from './pages/blog/BlogList'
 import BlogDetails from './pages/blog/BlogDetails'
 import ScrollTop from './components/ScrollTop'
+import ServiceDetails from './components/services/webdevelopmentDetails'
+
+
 
 export default function App() {
   return (
@@ -17,6 +20,7 @@ export default function App() {
     <ScrollTop/>
       <Navbar />
       <Routes>
+
         <Route path='/' element={<HomePage />} />
         <Route path='/about-us' element={<AboutPage />} />
         <Route path='/contact-us' element={<ContactusPage />} />
@@ -24,6 +28,9 @@ export default function App() {
 
         <Route path='/blog' element={<BlogList />} />
         <Route path='/blog/:slug' element={<BlogDetails />} />
+
+        <Route path='/services/:slug' element={<ServiceDetails />} />
+   
 
       </Routes>
       <Footer />

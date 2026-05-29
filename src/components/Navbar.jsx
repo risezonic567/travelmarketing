@@ -35,80 +35,86 @@ const Navbar = () => {
 
 
   const servicesList = [
-      {
-        Name:"Web Designing", path: "/",
-        subMenu: [
-          { name: "Website Design", path: "/" },
-          { name: "Web Portal Design", path: "/" },
-          { name: "WordPress Website Development", path: "/" },
-          { name: "Corporate Website Development", path: "/" },
-          { name: "CMS Website Development", path: "/" },
-          { name: "Graphic Design", path: "/" },
-          {name:"E-commerce Website Development", path: "/"},
-        ]
-      },
-
-    { Name: "Web Developments",
-        subMenu: [
-          { name: "Custom API Integration", path: "/" },
-          { name: "CMS Website Development", path: "/" },
-          { name: "CRM Website Development", path: "/" },
-          { name: "Hotel Management System", path: "/" },
-        ],
-      },
-
-    { Name: "API Integration",
+    {
+      Name: "Web Designing", path: "/",
       subMenu: [
-        {name:"Amadeus API Integration", path: "/"},
-        {name:"Car Rental API Integration", path: "/"},
-        {name:"Hotel API Integration", path: "/"},
-        {name:"Travelpayouts API Integration", path: "/"}, 
+        { name: "Website Design", path: "/services/website-design" },
+        { name: "Web Portal Design", path: "/services/web-portal-design" },
+        { name: "WordPress Website Development", path: "/services/wordpress-website-development" },
+        { name: "Corporate Website Development", path: "/services/corporate-website-development" },
+        { name: "Graphic Design", path: "/services/graphic-design" },
+        { name: "E-commerce Website Development", path: "/services/e-commerce-website-development" },
+      ]
+    },
+
+    {
+      Name: "Web Developments",
+      subMenu: [
+        { name: "Custom API Integration", path: "/services/custom-api-integration" },
+        { name: "CMS Website Development", path: "/services/cms-website-development" },
+        { name: "CRM Website Development", path: "/services/crm-website-development" },
+        { name: "Hotel Management System", path: "/services/hotel-management-system" },
       ],
-      path: "/" },
+    },
 
-    { Name: "Mobile App Development", 
+    {
+      Name: "API Integration",
       subMenu: [
-        {name:"Mobile App Development", path: "/"},
-        {name:"iOS App Development", path: "/"},
-        {name:"Android App Development", path: "/"},
+        { name: "Amadeus API Integration", path: "/services/amadeus-api-integration" },
+        { name: "Car Rental API Integration", path: "/services/car-rental-api-integration" },
+        { name: "Hotel API Integration", path: "/services/hotel-api-integration" },
+        { name: "Travelpayouts API Integration", path: "/services/travelpayouts-api-integration" },
       ],
-      
-      path: "/" },
+      path: "/"
+    },
 
-        { Name:"Digital Marketing",
+    {
+      Name: "Mobile App Development",
       subMenu: [
-        { name: "Content Marketing", path: "/" },
-        { name: "Email Marketing", path: "/" },
-        { name: "Data Science & Analytics", path: "/" },
-        { name: "Lead Generation", path: "/" },
-        { name: "Digital Marketing", path: "/" },
-        { name: "Social Media Marketing", path: "/" },
-         {name:"Search Engine Optimization", path: "/"},
-        {name:"Shopify SEO", path: "/"},
-        {name:"AI Optimization", path: "/"},
+        { name: "Mobile App Development", path: "/services/mobile-app-development" },
+        { name: "iOS App Development", path: "/services/ios-app-development" },
+        { name: "Android App Development", path: "/services/android-app-development" },
+      ],
+
+      path: "/"
+    },
+
+    {
+      Name: "Digital Marketing",
+      subMenu: [
+        { name: "Content Marketing", path: "/services/content-marketing" },
+        { name: "Email Marketing", path: "/services/email-marketing" },
+        { name: "Data Science & Analytics", path: "/services/data-science-&-analytics" },
+        { name: "Lead Generation", path: "/services/lead-generation" },
+        { name: "Digital Marketing", path: "/services/digital-marketing" },
+        { name: "Social Media Marketing", path: "/services/social-media-marketing" },
+        { name: "Search Engine Optimization", path: "/services/search-engine-optimization" },
+        { name: "Shopify SEO", path: "/services/shopify-seo" },
+        { name: "AI Optimization", path: "/services/ai-optimization" },
 
       ]
     },
     {
       Name: "Ads", path: "/",
       subMenu: [
-        { name: "Google Ads -(PPC Advertising)", path: "/" },
-        { name: "Facebook Ads", path: "/" },
-        { name: "Instagram Ads", path: "/" },
-        { name: "LinkedIn Ads", path: "/" },
+        { name: "Google Ads -(PPC Advertising)", path: "/services/google-ads" },
+        { name: "Facebook Ads", path: "/services/facebook-ads" },
+        { name: "Instagram Ads", path: "/services/instagram-ads" },
+        { name: "LinkedIn Ads", path: "/services/linkedin-ads" },
       ],
 
     },
 
-    { Name: "SEO", 
+    {
+      Name: "SEO",
       subMenu: [
-        { name: "On-Page SEO", path: "/" },
-        { name: "Off-Page SEO", path: "/" },
-        { name: "Technical SEO", path: "/" },
-        { name: "Local SEO", path: "/" },
-       
+        { name: "On-Page SEO", path: "/services/on-page-seo" },
+        { name: "Off-Page SEO", path: "/services/off-page-seo" },
+        { name: "Technical SEO", path: "/services/technical-seo" },
+        { name: "Local SEO", path: "/services/local-seo" },
+
       ],
-      path: "/" 
+      path: "/"
     }
   ]
 
@@ -144,7 +150,6 @@ const Navbar = () => {
         <div className="text-2xl font-semibold tracking-wide flex items-center">
           <Link to="/" className="flex items-center gap-3 group">
 
-            {/* Logo Box */}
             <div
               className="
       relative
@@ -168,7 +173,6 @@ const Navbar = () => {
         "
               />
 
-              {/* Glow */}
               <div
                 className="
         absolute

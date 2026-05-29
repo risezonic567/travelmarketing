@@ -89,7 +89,6 @@ export default function BlogList() {
   return (
     <>
 
-      {/* HERO SECTION */}
 
       <section className="relative overflow-hidden h-[500px] flex items-center justify-center">
 
@@ -149,7 +148,6 @@ export default function BlogList() {
       </section>
 
 
-      {/* FILTER SECTION */}
 
       <section className="sticky top-[72px] z-30 bg-white/80 backdrop-blur-xl border-b border-gray-200">
 
@@ -158,7 +156,6 @@ export default function BlogList() {
           <div className="flex flex-col lg:flex-row gap-5 lg:items-center lg:justify-between">
 
 
-            {/* CATEGORY BUTTONS */}
 
             <div className="flex gap-3 overflow-x-auto scrollbar-hide">
 
@@ -184,7 +181,6 @@ export default function BlogList() {
             </div>
 
 
-            {/* SORT */}
 
             <select
               className="px-5 py-3 rounded-xl border border-gray-200 bg-white outline-none focus:border-yellow-400"
@@ -216,14 +212,12 @@ export default function BlogList() {
       </section>
 
 
-      {/* BLOG GRID */}
 
       <section className="max-w-7xl mx-auto px-4 py-16">
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
 
 
-          {/* NO BLOG FOUND */}
 
           {paginatedBlogs.length === 0 && (
 
@@ -240,7 +234,6 @@ export default function BlogList() {
           )}
 
 
-          {/* BLOG CARDS */}
 
           {paginatedBlogs.map((item, index) => (
 
@@ -250,7 +243,6 @@ export default function BlogList() {
             >
 
 
-              {/* IMAGE */}
 
               <div className="relative overflow-hidden">
 
@@ -271,12 +263,10 @@ export default function BlogList() {
               </div>
 
 
-              {/* CONTENT */}
 
               <div className="p-6">
 
 
-                {/* META */}
 
                 <div className="flex items-center gap-4 text-sm text-gray-500 mb-4 flex-wrap">
 
@@ -292,7 +282,6 @@ export default function BlogList() {
                 </div>
 
 
-                {/* TITLE */}
 
                 <h2 className="text-2xl font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-yellow-600 transition">
 
@@ -300,7 +289,6 @@ export default function BlogList() {
                 </h2>
 
 
-                {/* DESCRIPTION */}
 
                 <p className="text-gray-600 mt-4 leading-relaxed line-clamp-3">
 
@@ -308,7 +296,6 @@ export default function BlogList() {
                 </p>
 
 
-                {/* FOOTER */}
 
                 <div className="flex items-center justify-between mt-6">
 
@@ -337,7 +324,6 @@ export default function BlogList() {
               </div>
 
 
-              {/* BORDER EFFECT */}
 
               <div className="absolute inset-0 rounded-[30px] border-2 border-transparent group-hover:border-yellow-400/30 pointer-events-none transition duration-500" />
             </div>
@@ -345,7 +331,6 @@ export default function BlogList() {
         </div>
 
 
-        {/* PAGINATION */}
 
         {filteredBlogs.length > 0 && (
 
