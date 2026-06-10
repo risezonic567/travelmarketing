@@ -115,11 +115,13 @@ export default function HomePage() {
           >
 
             <button
+            onClick={() => {window.location.href = '/about-us'}}
               className="
               bg-yellow-400
               hover:bg-white
               text-black
               font-semibold
+              cursor-pointer
               px-6
               md:px-8
               py-3.5

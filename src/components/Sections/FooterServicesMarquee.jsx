@@ -11,26 +11,32 @@ import {
 const services = [
   {
     title: "Web Development",
+    path: "/development-services/web-development",
     icon: Code2,
   },
   {
     title: "CRM Solutions",
+    path: "/development-services/crm-website-development",
     icon: Database,
   },
   {
     title: "SEO Optimization",
+    path: "/seo-services/seo-optimization",
     icon: Search,
   },
   {
     title: "App Development",
+    path: "/development-services/mobile-app-development",
     icon: Smartphone,
   },
   {
     title: "Digital Marketing",
+    path: "/marketing-services/digital-marketing",
     icon: Megaphone,
   },
   {
-    title: "Global Services",
+    title: "Ads Management",
+    path: "/ads-services/ads-management",
     icon: Globe2,
   },
 ];
@@ -75,7 +81,11 @@ export default function FooterServices() {
                     </div>
 
                     <h3 className="text-lg font-semibold text-white group-hover:text-black whitespace-nowrap">
-                      {item.title}
+                    {item.path && (
+                      <a href={item.path} className="hover:underline">
+                        {item.title}
+                      </a>
+                    )}
                     </h3>
                   </div>
                 );

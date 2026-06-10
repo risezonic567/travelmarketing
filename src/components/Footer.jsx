@@ -121,7 +121,7 @@ export default function Footer() {
               <Link to="/services/google-ads" className="hover:text-yellow-400 duration-300 block">Google Ads</Link>
             </li>
             <li>
-              <Link to="/services/website-design" className="hover:text-yellow-400 duration-300 block">Website Design</Link>
+              <Link to="/development-services/website-design" className="hover:text-yellow-400 duration-300 block">Website Design</Link>
             </li>
             <li>
               <Link to="/seo-services" className="hover:text-yellow-400 duration-300 block">SEO Services</Link>
@@ -140,13 +140,13 @@ export default function Footer() {
             Contact Us
           </h2>
           <div className="space-y-4 text-gray-300">
-            <Link to="tel:+919876543210" className="flex items-center gap-3 hover:text-yellow-400 duration-300 group">
+            <Link to="tel:+91-9711110975" className="flex items-center gap-3 hover:text-yellow-400 duration-300 group">
               <Phone size={18} className="text-yellow-400 group-hover:scale-110 duration-300" />
-              <p>+91 9876543210</p>
+              <p>tel:+91-9711110975</p>
             </Link>
-            <Link to="mailto:info@globalway.com" className="flex items-center gap-3 hover:text-yellow-400 duration-300 group">
+            <Link to="mailto:info@risezonic.com" className="flex items-center gap-3 hover:text-yellow-400 duration-300 group">
               <Mail size={18} className="text-yellow-400 group-hover:scale-110 duration-300" />
-              <p>info@globalway.com</p>
+              <p>info@risezonic.com</p>
             </Link>
             <Link to="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-yellow-400 duration-300 group">
               <MapPin size={18} className="text-yellow-400 mt-1 group-hover:scale-110 duration-300" />
@@ -158,7 +158,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 mt-10 pt-6 text-center text-gray-400 text-sm">
-        © 2026 GlobalWay. All Rights Reserved.
+        © 2026 RiseZonic. All Rights Reserved.
       </div>
     </footer>
     </>

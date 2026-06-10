@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import React from 'react'
 import TestimonialSection from '../components/Testimonials'
 import ServicesMarquee from '../components/Sections/ServiceMarquee'
+import { Link } from 'react-router-dom'
 
 
 export default function AboutPage() {
@@ -99,7 +100,8 @@ export default function AboutPage() {
               <ArrowRight size={18} />
             </button>
 
-            <button
+            <Link
+            to= "tel:+91-9711110975"
               className="
               border
               border-white/30
@@ -115,8 +117,8 @@ export default function AboutPage() {
               duration-300
               "
             >
-              Contact Us
-            </button>
+            Call Us
+            </Link>
 
           </motion.div>
 

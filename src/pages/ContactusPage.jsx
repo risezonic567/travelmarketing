@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactSection from '../components/Sections/ContactusSection'
 import { Mail, PhoneCall, MapPin } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function ContactusPage() {
   return (
@@ -78,7 +79,14 @@ export default function ContactusPage() {
 
                 <p className='text-gray-300 text-sm mt-2'>
 
-                  +91 98765 43210
+                <Link
+                  to="tel:+91-9711110975"
+                  className="text-gray-300 text-sm mt-2 hover:text-yellow-400 duration-300"
+                >
+
+                +91-9711110975
+
+                </Link>
 
                 </p>
               </div>
@@ -100,7 +108,14 @@ export default function ContactusPage() {
 
                 <p className='text-gray-300 text-sm mt-2'>
 
-                  info@yourcompany.com
+                  <Link
+                    to="mailto:info@risezonic.com"
+                    className="text-gray-300 text-sm mt-2 hover:text-yellow-400 duration-300"
+                  >
+
+                    info@risezonic.com
+
+                  </Link>
 
                 </p>
               </div>

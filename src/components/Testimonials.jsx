@@ -38,12 +38,10 @@ export default function TestimonialSection() {
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       
-      {/* Blur BG */}
       <div className="absolute top-0 left-0 w-72 md:w-96 h-72 md:h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10  overflow-hidden">
 
-        {/* Heading */}
         <motion.div
           initial={{
             opacity: 0,
@@ -72,10 +70,8 @@ export default function TestimonialSection() {
           </h2>
         </motion.div>
 
-        {/* Main Grid */}
         <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
 
-          {/* LEFT IMAGE */}
           <motion.div
             initial={{
               opacity: 0,
@@ -102,7 +98,6 @@ export default function TestimonialSection() {
 
             </div>
 
-            {/* Floating Card */}
             <div
               className="
               absolute
@@ -133,7 +128,6 @@ export default function TestimonialSection() {
 
           </motion.div>
 
-          {/* RIGHT SLIDER */}
           <motion.div
             initial={{
               opacity: 0,
@@ -181,7 +175,6 @@ export default function TestimonialSection() {
                     "
                   >
 
-                    {/* Glow */}
                     <div className="absolute top-0 right-0 w-48 md:w-72 h-48 md:h-72 bg-yellow-400/10 blur-[100px] rounded-full"></div>
 
                     <div>
@@ -196,7 +189,6 @@ export default function TestimonialSection() {
 
                     </div>
 
-                    {/* User */}
                     <div className="flex items-center gap-4 md:gap-5 mt-8 md:mt-10">
 
                       <img

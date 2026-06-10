@@ -9,6 +9,7 @@ import {
   Megaphone,
   Smartphone,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const expertise = [
   {
@@ -16,6 +17,7 @@ const expertise = [
     title: "Web Development",
     desc: "Modern, fast, and scalable websites designed to grow your business online.",
     icon: Globe2,
+    path:"/development-services/web-development"
   },
 
   {
@@ -23,6 +25,7 @@ const expertise = [
     title: "CRM Solutions",
     desc: "Custom CRM systems to manage customers, automate workflows, and increase productivity.",
     icon: Database,
+    path:"/development-services/crm-website-development"
   },
 
   {
@@ -30,13 +33,15 @@ const expertise = [
     title: "SEO Optimization",
     desc: "Improve your Google rankings and drive high-quality organic traffic to your website.",
     icon: Search,
+    path:"/development-services/seo-optimization"
   },
 
   {
     id: 4,
-    title: "UI/UX Design",
-    desc: "Creative and user-friendly designs focused on better engagement and conversions.",
+    title: "API Integration",
+    desc: "Seamlessly integrate third-party APIs to enhance functionality and streamline operations.",
     icon: Palette,
+    path:"/development-services/travelpayouts-api-integration"
   },
 
   {
@@ -44,6 +49,7 @@ const expertise = [
     title: "Digital Marketing",
     desc: "Result-driven marketing strategies to boost brand visibility and online sales.",
     icon: Megaphone,
+    path:"/marketing-services/digital-marketing"
   },
 
   {
@@ -51,6 +57,7 @@ const expertise = [
     title: "App Development",
     desc: "High-performance mobile and web applications tailored for your business needs.",
     icon: Smartphone,
+    path:"/development-services/android-app-development"
   },
 ];
 
@@ -58,15 +65,12 @@ export default function OurExperts() {
   return (
     <section className="relative py-28 overflow-hidden bg-[#050038]">
 
-      {/* Background Glow */}
 
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-yellow-500/20 blur-[140px]" />
 
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-pink-500/20 blur-[140px]" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-
-        {/* Heading */}
 
         <motion.div
           initial={{ opacity: 0, y: 70 }}
@@ -84,11 +88,9 @@ export default function OurExperts() {
           </h2>
         </motion.div>
 
-        {/* Main Layout */}
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
 
-          {/* Left Cards */}
 
           <div className="space-y-8">
 
@@ -109,12 +111,14 @@ export default function OurExperts() {
                     y: -10,
                     scale: 1.03,
                   }}
+                 
                   className="group relative bg-white/10 backdrop-blur-xl border border-white/10 rounded-[32px] p-8 overflow-hidden hover:border-yellow-400/40 transition duration-500"
                 >
-                  {/* Hover Glow */}
+
 
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 opacity-0 group-hover:opacity-100 transition duration-700" />
 
+                 <Link to={item.path} className="relative z-10">
                   <div className="relative z-10">
 
                     <div className="w-16 h-16 rounded-2xl bg-yellow-400 text-black flex items-center justify-center mb-6 shadow-lg">
@@ -125,16 +129,16 @@ export default function OurExperts() {
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-300 leading-relaxed text-lg">
+                    <p className="text-gray-300 font-serif leading-relaxed text-lg">
                       {item.desc}
                     </p>
                   </div>
+                 </Link>
                 </motion.div>
               );
             })}
           </div>
 
-          {/* Center Image */}
 
           <motion.div
             initial={{ opacity: 0, scale: 0.7 }}
@@ -143,7 +147,6 @@ export default function OurExperts() {
             viewport={{ once: true }}
             className="relative flex justify-center"
           >
-            {/* Animated Circle */}
 
             <motion.div
               animate={{
@@ -166,8 +169,6 @@ export default function OurExperts() {
               className="relative z-10 w-[340px] h-[500px] object-cover rounded-[60px] border-4 border-white/10 shadow-2xl"
             />
 
-            {/* Floating Badge */}
-
             <motion.div
               animate={{
                 y: [0, -15, 0],
@@ -187,8 +188,6 @@ export default function OurExperts() {
               </p>
             </motion.div>
           </motion.div>
-
-          {/* Right Cards */}
 
           <div className="space-y-8">
 
@@ -213,6 +212,7 @@ export default function OurExperts() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 opacity-0 group-hover:opacity-100 transition duration-700" />
 
+                 <Link to={item.path} className="relative z-10">
                   <div className="relative z-10">
 
                     <div className="w-16 h-16 rounded-2xl bg-yellow-400 text-black flex items-center justify-center mb-6 shadow-lg">
@@ -223,10 +223,11 @@ export default function OurExperts() {
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-300 leading-relaxed text-lg">
+                    <p className="text-gray-300 font-serif leading-relaxed text-lg">
                       {item.desc}
                     </p>
                   </div>
+                 </Link>
                 </motion.div>
               );
             })}

@@ -6,7 +6,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { marketingData } from "../../data/marketingrelated.js";
 
 
@@ -59,8 +59,11 @@ export default function MarketingDetails() {
   );
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    });
+  }, [slug]);
 
   if (!currentService) {
     return (
@@ -71,7 +74,7 @@ export default function MarketingDetails() {
   }
 
   return (
-    <div className="w-full bg-white text-gray-900 overflow-x-hidden">
+    <div key={slug} className="w-full bg-white text-gray-900 overflow-x-hidden">
 
       {/* HERO SECTION */}
 
@@ -106,9 +109,9 @@ export default function MarketingDetails() {
                 <ArrowRight size={18} />
               </button>
 
-              <button className="px-8 py-4 bg-transparent border-2 border-gray-600 text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all">
+              <Link to="tel:+91-9711110975" className="px-8 py-4 bg-transparent border-2 border-gray-600 text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all">
                 {currentService.hero.secondaryButton}
-              </button>
+              </Link>
 
             </div>
 

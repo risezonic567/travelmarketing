@@ -38,41 +38,42 @@ const Navbar = () => {
     {
       Name: "Web Designing",
       subMenu: [
-        { name: "Website Design", path: "/services/website-design" },
-        { name: "Web Portal Design", path: "/services/web-portal-design" },
-        { name: "WordPress Website Development", path: "/services/wordpress-website-development" },
-        { name: "Corporate Website Development", path: "/services/corporate-website-development" },
-        { name: "Graphic Design", path: "/services/graphic-design" },
-        { name: "E-commerce Website Development", path: "/services/e-commerce-website-development" },
+        { name: "Website Design", path: "/development-services/website-design" },
+        { name: "Web Portal Design", path: "/development-services/web-portal-design" },
+        { name: "WordPress Website Development", path: "/development-services/wordpress-website-development" },
+        { name: "Corporate Website Development", path: "/development-services/corporate-website-development" },
+        { name: "Graphic Design", path: "/development-services/graphic-design" },
+        { name: "E-commerce Website Development", path: "/development-services/e-commerce-website-development" },
       ]
     },
 
     {
       Name: "Web Developments",
       subMenu: [
-        { name: "Custom API Integration", path: "/services/custom-api-integration" },
-        { name: "CMS Website Development", path: "/services/cms-website-development" },
-        { name: "CRM Website Development", path: "/services/crm-website-development" },
-        { name: "Hotel Management System", path: "/services/hotel-management-system" },
+        { name: "Web Development", path: "/development-services/web-development" },
+        { name: "Custom API Integration", path: "/development-services/custom-api-integration" },
+        { name: "CMS Website Development", path: "/development-services/cms-website-development" },
+        { name: "CRM Website Development", path: "/development-services/crm-website-development" },
+        { name: "Hotel Management System", path: "/development-services/hotel-management-system" },
       ],
     },
 
     {
       Name: "API Integration",
       subMenu: [
-        { name: "Amadeus API Integration", path: "/services/amadeus-api-integration" },
-        { name: "Car Rental API Integration", path: "/services/car-rental-api-integration" },
-        { name: "Hotel API Integration", path: "/services/hotel-api-integration" },
-        { name: "Travelpayouts API Integration", path: "/services/travelpayouts-api-integration" },
+        { name: "Amadeus API Integration", path: "/development-services/amadeus-api-integration" },
+        { name: "Car Rental API Integration", path: "/development-services/car-rental-api-integration" },
+        { name: "Hotel API Integration", path: "/development-services/hotel-api-integration" },
+        { name: "Travelpayouts API Integration", path: "/development-services/travelpayouts-api-integration" },
       ],
     },
 
     {
       Name: "Mobile App Development",
       subMenu: [
-        { name: "Mobile App Development", path: "/services/mobile-app-development" },
-        { name: "iOS App Development", path: "/services/ios-app-development" },
-        { name: "Android App Development", path: "/services/android-app-development" },
+        { name: "Mobile App Development", path: "/development-services/mobile-app-development" },
+        { name: "iOS App Development", path: "/development-services/ios-app-development" },
+        { name: "Android App Development", path: "/development-services/android-app-development" },
       ],
     },
 
@@ -105,13 +106,14 @@ const Navbar = () => {
     {
       Name: "SEO",
       subMenu: [
-        { name: "On-Page SEO", path: "/seo/on-page-seo" },
-        { name: "Off-Page SEO", path: "/seo/off-page-seo" },
-        { name: "Technical SEO", path: "/seo/technical-seo" },
-        { name: "Local SEO", path: "/seo/local-seo" },
+        { name: "SEO Optimization", path: "/seo-services/seo-optimization" },
+        { name: "On-Page SEO", path: "/seo-services/on-page-seo" },
+        { name: "Off-Page SEO", path: "/seo-services/off-page-seo" },
+        { name: "Technical SEO", path: "/seo-services/technical-seo" },
+        { name: "Local SEO", path: "/seo-services/local-seo" },
 
       ],
-      
+
     }
   ]
 
@@ -256,9 +258,9 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
 
-          <button className="hidden md:block bg-yellow-400 hover:bg-white text-black px-7 py-3 rounded-full text-sm font-semibold tracking-wide transition-all duration-300">
+          <Link to="tel:+91-9711110975" className="hidden md:block bg-yellow-400 hover:bg-white text-black px-7 py-3 rounded-full text-sm font-semibold tracking-wide transition-all duration-300">
             Call Now
-          </button>
+          </Link>
 
           <button className="md:hidden text-white" onClick={() => setIsMobileOpen(true)}>
             <Menu size={28} />
@@ -311,9 +313,9 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <button className="bg-yellow-500 mt-6 py-3 rounded-full text-black font-semibold">
+              <Link to="tel:+91-9711110975" className="bg-yellow-500 mt-6 py-3 rounded-full text-black font-semibold">
                 Call Now
-              </button>
+              </Link>
 
             </div>
 

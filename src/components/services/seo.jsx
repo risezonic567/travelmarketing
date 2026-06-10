@@ -6,10 +6,9 @@ import {
   HelpCircle,
 } from "lucide-react";
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { seoData } from "../../data/seo.js";
 
-/* COUNTER FUNCTION */
 
 function AnimatedNumber({ value }) {
 
@@ -58,8 +57,13 @@ export default function SeoDetails() {
   );
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    }
+
+    );
+  }, [slug]);
 
   if (!currentService) {
     return (
@@ -70,9 +74,8 @@ export default function SeoDetails() {
   }
 
   return (
-    <div className="w-full bg-white text-gray-900 overflow-x-hidden">
+    <div key={slug} className="w-full bg-white text-gray-900 overflow-x-hidden">
 
-      {/* HERO SECTION */}
 
       <section className="relative pt-32 pb-20 bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden">
 
@@ -105,9 +108,9 @@ export default function SeoDetails() {
                 <ArrowRight size={18} />
               </button>
 
-              <button className="px-8 py-4 bg-transparent border-2 border-gray-600 text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all">
+              <Link to="tel:+91-9711110975" className="px-8 py-4 bg-transparent border-2 border-gray-600 text-white font-semibold rounded-full hover:bg-white hover:text-black transition-all">
                 {currentService.hero.secondaryButton}
-              </button>
+              </Link>
 
             </div>
 
@@ -131,7 +134,6 @@ export default function SeoDetails() {
 
       </section>
 
-      {/* STATS SECTION */}
 
       <section className="bg-gray-50 border-b border-gray-100 py-12">
 
@@ -181,11 +183,9 @@ export default function SeoDetails() {
 
       </section>
 
-      {/* DYNAMIC SECTIONS */}
 
       {currentService.sections.map((section, index) => {
 
-        /* CONTENT SECTION */
 
         if (section.type === "content") {
 
@@ -227,7 +227,6 @@ export default function SeoDetails() {
           );
         }
 
-        /* FEATURES SECTION */
 
         if (section.type === "features") {
 
@@ -278,7 +277,6 @@ export default function SeoDetails() {
           );
         }
 
-        /* PROCESS SECTION */
 
         if (section.type === "process") {
 
@@ -325,7 +323,6 @@ export default function SeoDetails() {
           );
         }
 
-        /* CTA SECTION */
 
         if (section.type === "cta") {
 
@@ -357,7 +354,6 @@ export default function SeoDetails() {
           );
         }
 
-        /* FAQ SECTION */
 
         if (section.type === "faq") {
 

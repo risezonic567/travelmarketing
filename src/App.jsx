@@ -32,15 +32,10 @@ export default function App() {
         <Route path='/blog' element={<BlogList />} />
         <Route path='/blog/:slug' element={<BlogDetails />} />
 
-        <Route path='/services/:slug' element={<ServiceDetails />} />
+        <Route path='/development-services/:slug' element={<ServiceDetails  />} />
         <Route path='/marketing-services/:slug' element={<MarketingDetails />} />
         <Route path='/ads-services/:slug' element={<AdsDetails />} />
-        <Route path='/seo/:slug' element={<SeoDetails />} />
-
-
-
-   
-
+        <Route path='/seo-services/:slug' element={<SeoDetails />} />
       </Routes>
       <Footer />
     </BrowserRouter>
