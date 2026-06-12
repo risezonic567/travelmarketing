@@ -149,7 +149,7 @@ export default function WhyChooseUsPage() {
 
                 <img
                   src="/images/Why Choose Us w-600px h-350px.jpg.jpeg"
-                  alt=""
+                  alt="Why Choose Us"
                   className="w-full  h-full border object-cover"
                 />
 

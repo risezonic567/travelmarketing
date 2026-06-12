@@ -274,41 +274,6 @@ const Navbar = () => {
                 <X size={28} />
               </button>
             </div>
-
-            {/* <div className="flex flex-col gap-6 mt-10 text-xl">
-              {["Home", "About Us", "Blog", "Contact Us"].map((item, index) => (
-                <Link
-                  key={index}
-                  to={item === "Home" ? "/" : `/${item.toLowerCase().replace(/ /g, "-")}`}
-                  onClick={() => setIsMobileOpen(false)}
-                  className="border-b border-gray-700 pb-2"
-                >
-                  {item}
-                </Link>
-              ))}
-
-              <div>
-                <p className="text-yellow-500 font-semibold">Services</p>
-                <div className="mt-3 flex flex-col gap-3 pl-3">
-                  {servicesList.map((service, i) => (
-                    <Link
-                      key={i}
-                      to={service.path}
-                      onClick={() => setIsMobileOpen(false)}
-                      className="text-gray-300 hover:text-yellow-400 transition"
-                    >
-                      {service.Name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              <Link to="tel:+91-9711110975" className="bg-yellow-500 mt-6 py-3 rounded-full text-black font-semibold">
-                Call Now
-              </Link>
-
-            </div> */}
-
             <div className="mt-8 flex flex-col ">
 
               <Link

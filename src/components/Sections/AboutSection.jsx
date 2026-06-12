@@ -152,7 +152,7 @@ export default function AboutSection() {
             >
               <img
                 src="/images/Home About Intro w-550px h-500px.jpg.jpeg"
-                alt=""
+                alt="Home About Intro w-550px h-500px"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -162,7 +162,7 @@ export default function AboutSection() {
             >
               <img
                 src="/images/Home About Intro w-370px h-300px.jpg.jpeg"
-                alt=""
+                alt="Home About Intro w-370px h-300px"
                 className="w-full h-full object-cover"
               />
             </div>

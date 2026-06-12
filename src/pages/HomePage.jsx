@@ -21,7 +21,7 @@ export default function HomePage() {
 
         <img
           src="/images/Travel Home PAGE Banneer.jpg.jpeg"
-          alt=""
+          alt="Travel Home PAGE Banneer"
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
 

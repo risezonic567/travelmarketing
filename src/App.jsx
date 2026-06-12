@@ -13,6 +13,7 @@ import ServiceDetails from './components/services/webdevelopmentDetails'
 import MarketingDetails from './components/services/marketingservices'
 import AdsDetails from './components/services/ads'
 import SeoDetails from './components/services/seo'
+import NotFound from './components/404NotFound'
 
 
 
@@ -27,15 +28,18 @@ export default function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about-us' element={<AboutPage />} />
         <Route path='/contact-us' element={<ContactusPage />} />
-        <Route path='/why-choose-us' element={<WhyChooseUsPage />} />
+        {/* <Route path='/why-choose-us' element={<WhyChooseUsPage />} /> */}
 
         <Route path='/blog' element={<BlogList />} />
         <Route path='/blog/:slug' element={<BlogDetails />} />
+
 
         <Route path='/development-services/:slug' element={<ServiceDetails  />} />
         <Route path='/marketing-services/:slug' element={<MarketingDetails />} />
         <Route path='/ads-services/:slug' element={<AdsDetails />} />
         <Route path='/seo-services/:slug' element={<SeoDetails />} />
+
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

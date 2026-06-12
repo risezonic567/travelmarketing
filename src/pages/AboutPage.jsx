@@ -13,7 +13,7 @@ export default function AboutPage() {
 
         <img
           src="/images/TravelAboutusBanner.jpg.jpeg"
-          alt=""
+          alt="TravelAboutusBanner"
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
 
@@ -140,7 +140,7 @@ export default function AboutPage() {
 
                 <img
                   src="/images/About Page intro w-600px h-500px.jpg.jpeg"
-                  alt=""
+                  alt="About Page Intro"
                   className="w-full h-full object-cover"
                 />
 

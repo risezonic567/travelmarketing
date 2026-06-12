@@ -57,7 +57,8 @@ const expertise = [
     title: "App Development",
     desc: "High-performance mobile and web applications tailored for your business needs.",
     icon: Smartphone,
-    path:"/development-services/android-app-development"
+    path:"/development-services/android-app-development",
+  
   },
 ];
 
