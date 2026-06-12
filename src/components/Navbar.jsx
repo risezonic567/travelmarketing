@@ -19,6 +19,18 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
+  if (isMobileOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [isMobileOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
         setShowNavbar(false)
@@ -255,7 +267,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4 }}
-            className="fixed top-0 right-0 w-full max-w-sm h-screen overflow-y-auto bg-black text-white z-50 p-4">
+            className="fixed top-0 right-0 w-[80%]  h-screen overflow-y-auto bg-black text-white z-50 p-4">
 
             <div className="flex justify-end">
               <button onClick={() => setIsMobileOpen(false)}>
@@ -315,7 +327,7 @@ const Navbar = () => {
                 About Us
               </Link>
 
-              {/* Services */}
+              
               <div className="border-b border-gray-800">
 
                 <button
