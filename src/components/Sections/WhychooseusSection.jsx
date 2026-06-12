@@ -193,7 +193,7 @@ export default function WhyChooseUsPage() {
         </div>
       </section>
 
-      <section className="py-28 bg-white relative overflow-hidden">
+      <section className="py-12 bg-white relative overflow-hidden">
 
         <div className="absolute top-0 left-0 w-80 h-80 bg-yellow-400/10 blur-[120px] rounded-full"></div>
 

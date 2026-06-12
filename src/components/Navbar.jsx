@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, Menu, X } from 'lucide-react'
+import { ChevronDown, ChevronUp, Menu, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isMobileOpen, setIsMobileOpen] = useState(false)
+
   const [openService, setOpenService] = useState(null);
+  const [subMenuOpen, setSubMenuOpen] = useState(null);
 
   const location = useLocation();
 
@@ -56,6 +58,12 @@ const Navbar = () => {
         { name: "CRM Website Development", path: "/development-services/crm-website-development" },
         { name: "Hotel Management System", path: "/development-services/hotel-management-system" },
       ],
+    },
+    {
+      Name: "Landing Page Development",
+      subMenu: [
+        { name: "Landing Page Development", path: "/development-services/landing-page-development" },
+      ]
     },
 
     {
@@ -150,45 +158,16 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-3 group">
 
             <div
-              className="
-      relative
-      overflow-hidden
-      px-3
-      py-2
-      transition-all
-      duration-500
-      "
-            >
+              className=" relative overflow-hidden px-3 py-2 transition-all duration-500">
               <img
                 src="/images/logo/dfgh.png"
                 alt="Logo"
-                className="
-        h-12
-        w-auto
-        object-contain
-        transition-all
-        duration-500
-        group-hover:scale-105
-        "
+                className=" h-12 w-auto object-contain transition-all duration-500 group-hover:scale-105"
               />
 
               <div
-                className="
-        absolute
-        inset-0
-        bg-gradient-to-r
-        from-yellow-400/0
-        via-yellow-400/10
-        to-yellow-400/0
-        opacity-0
-        group-hover:opacity-100
-        transition-all
-        duration-700
-        "
-              ></div>
+                className=" absolute  inset-0 bg-gradient-to-r from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
             </div>
-
-
 
           </Link>
         </div>
@@ -276,8 +255,7 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ duration: 0.4 }}
-            className="fixed top-0 right-0 w-full h-screen bg-black text-white z-50 p-6"
-          >
+            className="fixed top-0 right-0 w-full max-w-sm h-screen overflow-y-auto bg-black text-white z-50 p-4">
 
             <div className="flex justify-end">
               <button onClick={() => setIsMobileOpen(false)}>
@@ -285,7 +263,7 @@ const Navbar = () => {
               </button>
             </div>
 
-            <div className="flex flex-col gap-6 mt-10 text-xl">
+            {/* <div className="flex flex-col gap-6 mt-10 text-xl">
               {["Home", "About Us", "Blog", "Contact Us"].map((item, index) => (
                 <Link
                   key={index}
@@ -316,6 +294,125 @@ const Navbar = () => {
               <Link to="tel:+91-9711110975" className="bg-yellow-500 mt-6 py-3 rounded-full text-black font-semibold">
                 Call Now
               </Link>
+
+            </div> */}
+
+            <div className="mt-8 flex flex-col ">
+
+              <Link
+                to="/"
+                onClick={() => setIsMobileOpen(false)}
+                className="py-4 border-b border-gray-800"
+              >
+                Home
+              </Link>
+
+              <Link
+                to="/about-us"
+                onClick={() => setIsMobileOpen(false)}
+                className="py-4 border-b border-gray-800"
+              >
+                About Us
+              </Link>
+
+              {/* Services */}
+              <div className="border-b border-gray-800">
+
+                <button
+                  onClick={() =>
+                    setOpenService(
+                      openService === "services" ? null : "services"
+                    )
+                  }
+                  className="w-full flex justify-between items-center py-4"
+                >
+                  <span>Services</span>
+
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform ${openService === "services" ? "rotate-180" : ""
+                      }`}
+                  />
+                </button>
+
+                {openService === "services" && (
+                  <div className="pb-4 pl-3">
+
+                    {servicesList.map((service, index) => (
+                      <div key={index} className="mb-2">
+
+                        <button
+                          onClick={() =>
+                            setSubMenuOpen(
+                              subMenuOpen === index ? null : index
+                            )
+                          }
+                          className="w-full flex justify-between items-center py-3 text-yellow-400"
+                        >
+                          <span>{service.Name}</span>
+
+                          <ChevronUp
+                            size={18}
+                            className={`transition-transform ${openService === "services" ? "rotate-180" : ""
+                              }`}
+                          />
+                        </button>
+
+                        {subMenuOpen === index && (
+                          <div className="pl-4 flex flex-col">
+
+                            {service.subMenu?.map((sub, idx) => (
+                              <Link
+                                key={idx}
+                                to={sub.path}
+                                onClick={() => {
+                                  setIsMobileOpen(false);
+                                  setOpenService(null);
+                                  setSubMenuOpen(null);
+                                }}
+                                className="py-2 text-gray-300 hover:text-yellow-400"
+                              >
+                                {sub.name}
+                              </Link>
+                            ))}
+
+                          </div>
+                        )}
+
+                      </div>
+                    ))}
+
+                  </div>
+                )}
+
+              </div>
+
+              <Link
+                to="/blog"
+                onClick={() => setIsMobileOpen(false)}
+                className="py-4 border-b border-gray-800"
+              >
+                Blog
+              </Link>
+
+              <Link
+                to="/contact-us"
+                onClick={() => setIsMobileOpen(false)}
+                className="py-4 border-b border-gray-800"
+              >
+                Contact Us
+              </Link>
+
+              <div className="mt-auto pt-8">
+
+                <Link
+                  to="tel:+91-9711110975"
+                  className="block text-center bg-yellow-400 text-black py-4 rounded-full font-semibold"
+                >
+                  Call Now
+                </Link>
+
+              </div>
 
             </div>
 

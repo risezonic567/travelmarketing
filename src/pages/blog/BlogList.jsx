@@ -102,11 +102,11 @@ export default function BlogList() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
 
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-yellow-400 mb-6">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 mt-20 rounded-full bg-white/10 border border-white/10 backdrop-blur-xl text-yellow-400 mb-6 ">
 
             <Sparkles size={18} />
 
-            <span className="text-sm font-medium">
+            <span className="text-sm  font-medium">
               Latest Insights & Articles
             </span>
           </div>

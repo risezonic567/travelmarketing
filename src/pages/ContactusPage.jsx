@@ -84,7 +84,7 @@ export default function ContactusPage() {
                   className="text-gray-300 text-sm mt-2 hover:text-yellow-400 duration-300"
                 >
 
-                +91-9711110975
+               tel:+91-9711110975
 
                 </Link>
 
@@ -113,7 +113,7 @@ export default function ContactusPage() {
                     className="text-gray-300 text-sm mt-2 hover:text-yellow-400 duration-300"
                   >
 
-                    info@risezonic.com
+                   Mail-to: info@risezonic.com
 
                   </Link>
 
@@ -135,11 +135,17 @@ export default function ContactusPage() {
 
                 </h3>
 
-                <p className='text-gray-300 text-sm mt-2'>
+                <Link
+                  to="https://maps.app.goo.gl/Npvor4UUwEzxWS9b8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='text-gray-300 text-sm mt-2 hover:text-yellow-400 duration-300'
+                >
 
-                  New Delhi, India
+                  RZ11/D, Upper Ground Floor Opp.<br/> Palam Metro Station Gate No 3,<br/> Palam Dwarka Road, Delhi, 110045
 
-                </p>
+                </Link>
+
               </div>
 
             </div>

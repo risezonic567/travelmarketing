@@ -124,14 +124,11 @@ export default function Footer() {
               <Link to="/development-services/website-design" className="hover:text-yellow-400 duration-300 block">Website Design</Link>
             </li>
             <li>
-              <Link to="/seo-services" className="hover:text-yellow-400 duration-300 block">SEO Services</Link>
+              <Link to="/seo-services/seo-optimization" className="hover:text-yellow-400 duration-300 block">SEO Services</Link>
             </li>
             <li>
-              <Link to="/business-consulting" className="hover:text-yellow-400 duration-300 block">Business Consulting</Link>
+              <Link to="/marketing-services/digital-marketing" className="hover:text-yellow-400 duration-300 block">Digital Marketing</Link>
             </li>
-            {/* <li>
-              <Link to="/holiday-packages" className="hover:text-yellow-400 duration-300 block">Holiday Packages</Link>
-            </li> */}
           </ul>
         </div>
 
@@ -148,9 +145,9 @@ export default function Footer() {
               <Mail size={18} className="text-yellow-400 group-hover:scale-110 duration-300" />
               <p>info@risezonic.com</p>
             </Link>
-            <Link to="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-yellow-400 duration-300 group">
+            <Link to="https://maps.app.goo.gl/Npvor4UUwEzxWS9b8" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-yellow-400 duration-300 group">
               <MapPin size={18} className="text-yellow-400 mt-1 group-hover:scale-110 duration-300" />
-              <p>New Delhi, India</p>
+              <p>RZ11/D, Upper Ground Floor Opp.<br/> Palam Metro Station Gate No 3,<br/> Palam Dwarka Road, Delhi, 110045</p>
             </Link>
           </div>
         </div>
