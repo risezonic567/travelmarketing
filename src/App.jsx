@@ -14,6 +14,7 @@ import MarketingDetails from './components/services/marketingservices'
 import AdsDetails from './components/services/ads'
 import SeoDetails from './components/services/seo'
 import NotFound from './components/404NotFound'
+import WhatsAppButton from './components/WhatsApp'
 
 
 
@@ -41,6 +42,8 @@ export default function App() {
 
         <Route path="/*" element={<NotFound />} />
       </Routes>
+
+      <WhatsAppButton/>
       <Footer />
     </BrowserRouter>
 

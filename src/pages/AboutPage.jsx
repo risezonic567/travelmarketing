@@ -5,12 +5,11 @@ import TestimonialSection from '../components/Testimonials'
 import ServicesMarquee from '../components/Sections/ServiceMarquee'
 import { Link } from 'react-router-dom'
 
-
 export default function AboutPage() {
   return (
     <div>
       <section className="relative h-screen w-full overflow-hidden">
-
+      
         <img
           src="/images/TravelAboutusBanner.jpg.jpeg"
           alt="TravelAboutusBanner"
@@ -129,6 +128,7 @@ export default function AboutPage() {
       <section className="py-28 bg-white overflow-hidden relative">
 
         <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
+      
 
         <div className="max-w-7xl mx-auto px-6">
 

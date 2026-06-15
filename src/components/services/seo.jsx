@@ -98,7 +98,7 @@ export default function SeoDetails() {
               {currentService.hero.title}
             </h1>
 
-            <p className="mt-6 text-gray-400 text-lg leading-relaxed">
+            <p className="mt-6 text-gray-400 font-serif text-lg leading-relaxed">
               {currentService.hero.subtitle}
             </p>
 
@@ -208,7 +208,7 @@ export default function SeoDetails() {
                     {section.heading}
                   </h2>
 
-                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  <p className="text-gray-600 font-serif text-lg leading-relaxed mb-6">
                     {section.text}
                   </p>
 
@@ -303,7 +303,7 @@ export default function SeoDetails() {
                       </h3>
 
                       {/* Description */}
-                      <p className="relative z-10 text-gray-600 text-sm leading-relaxed">
+                      <p className="relative z-10 text-gray-600 font-serif text-sm leading-relaxed">
                         {item.text}
                       </p>
 
@@ -340,7 +340,7 @@ export default function SeoDetails() {
                     {section.heading}
                   </h2>
 
-                  <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+                  <p className="text-gray-400 mt-4 max-w-2xl mx-auto font-serif">
                     A streamlined process designed to deliver quality results efficiently.
                   </p>
                 </div>
@@ -398,13 +398,30 @@ export default function SeoDetails() {
                   {section.heading}
                 </h2>
 
-                <p className="text-lg mb-8 font-medium">
+                <p className="text-lg mb-8 font-serif font-medium">
                   {section.text}
                 </p>
 
-                <button className="px-8 py-4 bg-black text-white font-bold rounded-full hover:bg-gray-800 transition">
-                  {section.button}
-                </button>
+                <motion.button
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.95 }}
+                  animate={{
+                    boxShadow: [
+                      "0 0 0px rgba(0,0,0,0)",
+                      "0 0 40px rgba(0,0,0,0.4)",
+                      "0 0 0px rgba(0,0,0,0)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                  }}
+                  className="px-8 py-4 bg-black text-white font-bold rounded-full"
+                >
+                  <Link to="tel:+91-9711110975" className="flex items-center gap-2" >
+                    {section.button}
+                  </Link>
+                </motion.button>
 
               </div>
 
@@ -459,7 +476,7 @@ export default function SeoDetails() {
                       <div className="px-6 md:px-7 pb-6">
                         <div className="h-px bg-gray-200 mb-5"></div>
 
-                        <p className="text-gray-600 leading-8">
+                        <p className="text-gray-600 font-serif leading-8">
                           {faq.answer}
                         </p>
                       </div>

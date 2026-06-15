@@ -118,7 +118,7 @@ export default function Footer() {
           </h2>
           <ul className="space-y-4 text-gray-300">
             <li>
-              <Link to="/services/google-ads" className="hover:text-yellow-400 duration-300 block">Google Ads</Link>
+              <Link to="/ads-services/google-ads" className="hover:text-yellow-400 duration-300 block">Google Ads</Link>
             </li>
             <li>
               <Link to="/development-services/website-design" className="hover:text-yellow-400 duration-300 block">Website Design</Link>

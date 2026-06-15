@@ -418,7 +418,7 @@ export const servicesData = [
         "UI/UX Design",
         "Development & Integrations",
         "Quality Assurance Testing",
-        "Deployment & Maintenance"
+       
       ]
     },
     {
@@ -515,7 +515,6 @@ export const servicesData = [
         "Concept Development",
         "Design Creation",
         "Client Feedback",
-        "Final Delivery"
       ]
     },
     {
@@ -614,7 +613,6 @@ export const servicesData = [
         "UI/UX Design",
         "Development & Integrations",
         "Testing & Quality Assurance",
-        "Launch & Ongoing Support"
       ]
     },
     {
@@ -713,7 +711,7 @@ export const servicesData = [
         "Integration Development",
         "Security Implementation",
         "Testing & Validation",
-        "Deployment & Monitoring"
+     
       ]
     },
     {
@@ -812,7 +810,7 @@ export const servicesData = [
         "UI/UX Design",
         "CMS Development",
         "Testing & Optimization",
-        "Deployment & Training"
+      
       ]
     },
     {
@@ -911,7 +909,7 @@ export const servicesData = [
         "UI/UX Design",
         "CRM Development",
         "Testing & Deployment",
-        "Training & Ongoing Support"
+       
       ]
     },
     {
@@ -1031,7 +1029,7 @@ export const servicesData = [
         "Software Development",
         "Testing & Quality Assurance",
         "Deployment & Training",
-        "Ongoing Maintenance & Support"
+        
       ]
     },
 
@@ -1168,7 +1166,7 @@ export const servicesData = [
         "Backend Integration",
         "Frontend Implementation",
         "Testing & Data Validation",
-        "Deployment & Support"
+       
       ]
     },
 
@@ -1304,7 +1302,7 @@ export const servicesData = [
         "Backend Development",
         "Frontend Integration",
         "Testing & Debugging",
-        "Deployment & Maintenance"
+       
       ]
     },
 
@@ -1440,7 +1438,7 @@ export const servicesData = [
         "Backend Development & Integration",
         "Frontend Booking Flow Implementation",
         "Testing & Data Validation",
-        "Deployment & Maintenance Support"
+       
       ]
     },
 
@@ -1576,7 +1574,7 @@ export const servicesData = [
         "API Integration & Backend Setup",
         "Frontend Search Engine Development",
         "Affiliate Tracking Configuration",
-        "Testing & Deployment"
+       
       ]
     },
 
@@ -1712,7 +1710,7 @@ export const servicesData = [
         "App Development",
         "API Integration",
         "Testing & QA",
-        "App Store Deployment & Maintenance"
+     
       ]
     },
 
@@ -1849,7 +1847,7 @@ export const servicesData = [
         "Swift Development",
         "Backend & API Integration",
         "Testing on iOS Devices",
-        "App Store Submission & Launch"
+      
       ]
     },
 
@@ -1986,7 +1984,7 @@ export const servicesData = [
         "Kotlin/Java Development",
         "Backend & API Integration",
         "Testing on Android Devices",
-        "Play Store Launch & Support"
+       
       ]
     },
 
@@ -2258,7 +2256,7 @@ export const servicesData = [
         "Frontend Development",
         "Backend Development",
         "Testing & Optimization",
-        "Deployment & Maintenance"
+      
       ]
     },
 
