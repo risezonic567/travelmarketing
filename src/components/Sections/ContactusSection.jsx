@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import { motion } from 'framer-motion';
-// import { FaFacebookF, FaLinkedinIn, FaYoutube, FaPinterestP, FaInstagram } from 'react-icons/fa';
-// import { FaXTwitter } from 'react-icons/fa6';
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: ''
-  });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const form = useRef()
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-  };
+
+    emailjs.sendForm('service_d8z2luw', 'template_4tj272o', form.current, 'uigXUlPKgly_hX1e4')
+      .then(
+        ()=>{
+          alert("Message Sent Successfully")
+        },
+        (error)=>{
+          console.log(error.text)
+        }
+      )
+    }
 
   // Animation variants
   const containerVariants = {
@@ -64,19 +64,6 @@ export default function ContactSection() {
             </p>
           </motion.div>
 
-            {/* <motion.div 
-              variants={itemVariants}
-              className="flex-1 p-8 rounded-3xl bg-gradient-to-tr from-slate-900 via-slate-900 to-slate-850 border border-slate-800/80 shadow-2xl flex flex-col justify-between relative overflow-hidden min-h-[300px] group"
-            >
-              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-yellow-500/10 rounded-full blur-3xl group-hover:bg-yellow-500/20 transition-all duration-500" />
-              
-              <div className="relative z-10">
-                <div className="w-12 h-1 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full mb-6" />
-                <p className="text-xl font-medium text-slate-300 italic">
-                  "Transforming complex ideas into seamless digital realities."
-                </p>
-              </div>
-            </motion.div> */}
         </motion.div>
 
         <motion.div 
@@ -86,7 +73,8 @@ export default function ContactSection() {
           transition={{ type: 'spring', stiffness: 60, delay: 0.2 }}
         >
           <form 
-            onSubmit={handleSubmit}
+            ref={form}
+            onSubmit={sendEmail}
             className="p-8 md:p-10 rounded-3xl bg-white/10 border border-slate-800 backdrop-blur-md shadow-2xl flex flex-col gap-6 relative"
           >
             <div className="absolute top-0 left-1/4 right-1/4 h-[1px] bg-gradient-to-r from-transparent via-amber-500/50 to-transparent" />
@@ -99,8 +87,7 @@ export default function ContactSection() {
                 type="text" 
                 name="name"
                 required
-                value={formData.name}
-                onChange={handleChange}
+                
                 placeholder="Enter Name"
                 className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300"
               />
@@ -120,8 +107,7 @@ export default function ContactSection() {
                   name="phone"
                   required
                   pattern="[0-9]{10}"
-                  value={formData.phone}
-                  onChange={handleChange}
+               
                   placeholder="Phone-number"
                   className="w-full bg-transparent px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none"
                 />
@@ -136,8 +122,6 @@ export default function ContactSection() {
                 type="email" 
                 name="email"
                 required
-                value={formData.email}
-                onChange={handleChange}
                 placeholder="Email Id"
                 className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300"
               />
@@ -151,8 +135,7 @@ export default function ContactSection() {
                 name="message"
                 required
                 rows="4"
-                value={formData.message}  
-                onChange={handleChange}
+             
                 placeholder="Type your message here ..."
                 className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3.5 text-white placeholder-slate-300 focus:outline-none focus:border-amber-500/80 focus:ring-1 focus:ring-amber-500/30 transition-all duration-300 resize-none"
               />
