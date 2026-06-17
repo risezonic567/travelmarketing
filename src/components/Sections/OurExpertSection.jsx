@@ -33,7 +33,7 @@ const expertise = [
     title: "SEO Optimization",
     desc: "Improve your Google rankings and drive high-quality organic traffic to your website.",
     icon: Search,
-    path:"/development-services/seo-optimization"
+    path:"/seo-services/seo-optimization"
   },
 
   {

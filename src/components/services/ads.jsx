@@ -114,7 +114,7 @@ export default function AdsDetails() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-yellow-400 z-[9999] origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-[#FFDE63] z-[9999] origin-left"
         style={{ scaleX }}
       />
 
@@ -606,6 +606,10 @@ export default function AdsDetails() {
           return null;
 
         })}
+
+         <div className="bg-gradient-to-b text-white py-10">
+                <OurExperts  />
+                </div>
 
       </div >
     </>

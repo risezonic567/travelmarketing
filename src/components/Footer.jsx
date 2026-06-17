@@ -143,7 +143,7 @@ export default function Footer() {
             </Link>
             <Link to="mailto:info@risezonic.com" className="flex items-center gap-3 hover:text-yellow-400 duration-300 group">
               <Mail size={18} className="text-yellow-400 group-hover:scale-110 duration-300" />
-              <p>info@risezonic.com</p>
+              <p>Mail:info@risezonic.com</p>
             </Link>
             <Link to="https://maps.app.goo.gl/Npvor4UUwEzxWS9b8" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-yellow-400 duration-300 group">
               <MapPin size={18} className="text-yellow-400 mt-1 group-hover:scale-110 duration-300" />

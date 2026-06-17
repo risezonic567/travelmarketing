@@ -8,7 +8,6 @@ import {
 } from "lucide-react";
 
 import {
-
   useScroll,
   useSpring
 } from "framer-motion";
@@ -114,7 +113,7 @@ export default function ServiceDetails() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-yellow-400 z-[9999] origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-[#FFDE63] z-[9999] origin-left"
         style={{ scaleX }}
       />
 
@@ -138,8 +137,7 @@ export default function ServiceDetails() {
         className="w-full bg-white text-gray-900 overflow-x-hidden">
         <section className="relative pt-32 pb-20 bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden">
 
-          {/* <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-500/10 blur-3xl rounded-full" /> */}
-
+      
           <motion.div
             className="absolute top-0 left-0 w-96 h-96 bg-yellow-500/10 blur-3xl rounded-full"
             animate={{
@@ -334,9 +332,6 @@ export default function ServiceDetails() {
           if (section.type === "features") {
 
             return (
-
-
-
               <section
                 key={index}
                 className="py-20 bg-gradient-to-b from-white to-gray-50"
@@ -417,8 +412,6 @@ export default function ServiceDetails() {
             );
           }
 
-
-
           if (section.type === "process") {
 
             return (
@@ -488,8 +481,6 @@ export default function ServiceDetails() {
 
             );
           }
-
-
 
           if (section.type === "cta") {
 
@@ -606,7 +597,9 @@ export default function ServiceDetails() {
           return null;
 
         })}
-
+    <div className="bg-gradient-to-b text-white py-10">
+        <OurExperts  />
+        </div>
       </div >
     </>
   );

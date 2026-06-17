@@ -9,7 +9,7 @@ export default function ContactSection() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_d8z2luw', 'template_4tj272o', form.current, 'uigXUlPKgly_hX1e4')
+    emailjs.sendForm('service_d8z2luw', 'template_737hhog', form.current, 'uigXUlPKgly_hX1e4')
       .then(
         ()=>{
           alert("Message Sent Successfully")

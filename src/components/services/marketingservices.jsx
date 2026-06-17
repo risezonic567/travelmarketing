@@ -14,6 +14,7 @@ import {
 } from "framer-motion";
 
 import { Link, useParams } from "react-router-dom";
+import OurExperts from "../Sections/OurExpertSection.jsx";
 
 
 function AnimatedNumber({ value }) {
@@ -105,7 +106,7 @@ export default function MarketingDetails() {
   if (!currentService) {
     return (
       <div className="text-center mt-20">
-       Marketing Service Not Found
+        Marketing Service Not Found
       </div>
     );
   }
@@ -113,11 +114,12 @@ export default function MarketingDetails() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-yellow-400 z-[9999] origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-[#FFDE63] z-[9999] origin-left"
         style={{ scaleX }}
       />
 
-      <motion.div
+
+ <motion.div
         className="fixed inset-0 pointer-events-none z-0"
         animate={{
           background: [
@@ -131,7 +133,7 @@ export default function MarketingDetails() {
           repeat: Infinity,
         }}
       />
-
+      
       <div
         key={slug}
         className="w-full bg-white text-gray-900 overflow-x-hidden">
@@ -270,8 +272,6 @@ export default function MarketingDetails() {
 
         </section>
 
-
-
         {currentService.sections.map((section, index) => {
 
           if (section.type === "content") {
@@ -326,14 +326,9 @@ export default function MarketingDetails() {
             );
           }
 
-
-
           if (section.type === "features") {
 
             return (
-
-
-
               <section
                 key={index}
                 className="py-20 bg-gradient-to-b from-white to-gray-50"
@@ -521,8 +516,8 @@ export default function MarketingDetails() {
                     className="px-8 py-4 bg-black text-white font-bold rounded-full"
                   >
                     <Link to="tel:+91-9711110975" className="flex items-center gap-2" >
-                                      {section.button}
-                                     </Link>
+                      {section.button}
+                    </Link>
                   </motion.button>
 
                 </div>
@@ -599,6 +594,10 @@ export default function MarketingDetails() {
           return null;
 
         })}
+
+        <div className="bg-gradient-to-b text-white py-10">
+          <OurExperts />
+        </div>
 
       </div >
     </>
