@@ -63,14 +63,14 @@ export default function ServicesSection() {
   return (
     <section className="relative  w-full py-24 overflow-hidden bg-black">
       
-      {/* Background Glow */}
+    
       <div className="absolute top-0 left-0 w-72 h-72 bg-[#FFB800]/20 blur-[120px] rounded-full"></div>
 
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#0B1D51] blur-[140px] rounded-full"></div>
 
       <div className="max-w-7xl mx-auto px-5 relative z-10">
         
-        {/* Heading */}
+
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -201,7 +201,7 @@ export default function ServicesSection() {
                       />
                     </div>
 
-                    {/* Content */}
+                  
                     <div className="relative z-10">
                       <h3 className="text-2xl font-bold text-white mb-4">
                         {service.title}
@@ -212,7 +212,7 @@ export default function ServicesSection() {
                       </p>
                     </div>
 
-                    {/* Bottom Line Animation */}
+                  
                     <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-[#FFB800] group-hover:w-full transition-all duration-500"></div>
 
                   </motion.div>

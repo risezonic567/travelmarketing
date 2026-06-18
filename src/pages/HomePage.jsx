@@ -134,19 +134,20 @@ export default function HomePage() {
               gap-3
               "
             >
-              Explore Services
+              Get a Free Demo
 
               <ArrowRight size={18} />
             </button>
 
-            <button
+            <Link to="https://wa.me/+91-9711110975"
               className="
               border
               border-white/30
               hover:border-yellow-400
-              hover:bg-yellow-400
+              bg-yellow-400
+              hover:bg-white
               hover:text-black
-              text-white
+              text-black
               font-semibold
               px-6
               md:px-8
@@ -157,8 +158,8 @@ export default function HomePage() {
               duration-300
               "
             >
-              <Link to="/contact-us">Contact Us</Link>
-            </button>
+              Let's Connect
+            </Link>
 
           </motion.div>
 

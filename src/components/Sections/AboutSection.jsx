@@ -6,6 +6,7 @@ import {
   Plane,
   ShieldCheck,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   return (
@@ -93,28 +94,15 @@ export default function AboutSection() {
 
             </div>
 
-            <button
-              className="
-              mt-12
-              bg-[#0B1F3A]
-              hover:bg-yellow-400
-              hover:text-black
-              text-white
-              px-8
-              py-4
-              rounded-full
-              font-semibold
-              flex
-              items-center
-              gap-3
-              transition-all
+            <Link to="https://wa.me/+91-9711110975"
+              className="mt-12 bg-[#0B1F3A]    bg-yellow-400 hover:text-black w-[170px] text-black   px-8 py-4 rounded-full font-semibold flex items-center gap-3 transition-all
               duration-300
               "
             >
-              Explore More
+              Chat Now
 
               <ArrowRight size={18} />
-            </button>
+            </Link>
 
           </motion.div>
 
