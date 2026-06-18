@@ -1,3 +1,105 @@
 @import "tailwindcss";
+.modal-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 24px;
 
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+
+  color: white;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 16px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #facc15;
+
+  box-shadow: 0 0 15px rgba(250,204,21,.5);
+
+  transform: translateY(-2px);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+
+  border-radius: 12px;
+  border: none;
+
+  background: linear-gradient(
+    135deg,
+    #facc15,
+    #f59e0b
+  );
+
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 10px 25px rgba(245,158,11,.45);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  color: white;
+  background: transparent;
+  border: none;
+
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  color: #facc15;
+}
+
+.modal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,.15),
+    transparent
+  );
+
+  pointer-events: none;
+}
 
