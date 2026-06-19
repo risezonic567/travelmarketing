@@ -17,7 +17,7 @@ const expertise = [
     title: "Web Development",
     desc: "Modern, fast, and scalable websites designed to grow your business online.",
     icon: Globe2,
-    path:"/development-services/web-development"
+    path: "/development-services/web-development"
   },
 
   {
@@ -25,7 +25,7 @@ const expertise = [
     title: "CRM Solutions",
     desc: "Custom CRM systems to manage customers, automate workflows, and increase productivity.",
     icon: Database,
-    path:"/development-services/crm-website-development"
+    path: "/development-services/crm-website-development"
   },
 
   {
@@ -33,7 +33,7 @@ const expertise = [
     title: "SEO Optimization",
     desc: "Improve your Google rankings and drive high-quality organic traffic to your website.",
     icon: Search,
-    path:"/seo-services/seo-optimization"
+    path: "/seo-services/seo-optimization"
   },
 
   {
@@ -41,7 +41,7 @@ const expertise = [
     title: "API Integration",
     desc: "Seamlessly integrate third-party APIs to enhance functionality and streamline operations.",
     icon: Palette,
-    path:"/development-services/travelpayouts-api-integration"
+    path: "/development-services/travelpayouts-api-integration"
   },
 
   {
@@ -49,7 +49,7 @@ const expertise = [
     title: "Digital Marketing",
     desc: "Result-driven marketing strategies to boost brand visibility and online sales.",
     icon: Megaphone,
-    path:"/marketing-services/digital-marketing"
+    path: "/marketing-services/digital-marketing"
   },
 
   {
@@ -57,8 +57,8 @@ const expertise = [
     title: "App Development",
     desc: "High-performance mobile and web applications tailored for your business needs.",
     icon: Smartphone,
-    path:"/development-services/android-app-development",
-  
+    path: "/development-services/android-app-development",
+
   },
 ];
 
@@ -112,29 +112,29 @@ export default function OurExperts() {
                     y: -10,
                     scale: 1.03,
                   }}
-                 
+
                   className="group relative bg-white/10 backdrop-blur-xl border border-white/10 rounded-[32px] p-8 overflow-hidden hover:border-yellow-400/40 transition duration-500"
                 >
 
 
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 opacity-0 group-hover:opacity-100 transition duration-700" />
 
-                 <Link to={item.path} className="relative z-10">
-                  <div className="relative z-10">
+                  <Link to={item.path} className="relative z-10">
+                    <div className="relative z-10">
 
-                    <div className="w-16 h-16 rounded-2xl bg-yellow-400 text-black flex items-center justify-center mb-6 shadow-lg">
-                      <Icon size={30} />
+                      <div className="w-16 h-16 rounded-2xl bg-yellow-400 text-black flex items-center justify-center mb-6 shadow-lg">
+                        <Icon size={30} />
+                      </div>
+
+                      <h3 className="text-3xl font-bold text-white mb-4">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-gray-300 font-serif leading-relaxed text-lg">
+                        {item.desc}
+                      </p>
                     </div>
-
-                    <h3 className="text-3xl font-bold text-white mb-4">
-                      {item.title}
-                    </h3>
-
-                    <p className="text-gray-300 font-serif leading-relaxed text-lg">
-                      {item.desc}
-                    </p>
-                  </div>
-                 </Link>
+                  </Link>
                 </motion.div>
               );
             })}
@@ -161,16 +161,19 @@ export default function OurExperts() {
               className="absolute w-[420px] h-[420px] border-2 border-dashed border-yellow-400/40 rounded-full"
             />
 
-            <motion.img
+            <motion.video
               whileHover={{
                 scale: 1.05,
               }}
-              src=""
-              alt=""
-              className="relative z-10 w-[340px] h-[500px] object-cover rounded-[60px] border-4 border-white/10 shadow-2xl"
+              src="/video/Our_Experts.mp4"
+              autoPlay
+              loop
+              muted
+
+              className="relative z-10 w-[400px]  h-[400px] object-cover mt-2 rounded-[60px] border-4 border-white/10 shadow-2xl"
             />
 
-          
+
           </motion.div>
 
           <div className="space-y-8">
@@ -196,22 +199,22 @@ export default function OurExperts() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 opacity-0 group-hover:opacity-100 transition duration-700" />
 
-                 <Link to={item.path} className="relative z-10">
-                  <div className="relative z-10">
+                  <Link to={item.path} className="relative z-10">
+                    <div className="relative z-10">
 
-                    <div className="w-16 h-16 rounded-2xl bg-yellow-400 text-black flex items-center justify-center mb-6 shadow-lg">
-                      <Icon size={30} />
+                      <div className="w-16 h-16 rounded-2xl bg-yellow-400 text-black flex items-center justify-center mb-6 shadow-lg">
+                        <Icon size={30} />
+                      </div>
+
+                      <h3 className="text-3xl font-bold text-white mb-4">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-gray-300 font-serif leading-relaxed text-lg">
+                        {item.desc}
+                      </p>
                     </div>
-
-                    <h3 className="text-3xl font-bold text-white mb-4">
-                      {item.title}
-                    </h3>
-
-                    <p className="text-gray-300 font-serif leading-relaxed text-lg">
-                      {item.desc}
-                    </p>
-                  </div>
-                 </Link>
+                  </Link>
                 </motion.div>
               );
             })}
