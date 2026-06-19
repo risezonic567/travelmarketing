@@ -17,7 +17,7 @@ export const seoData =[
     subtitle:
       "Improve search engine rankings and user experience with expert on-page SEO optimization for your website.",
     image:
-      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=1400",
+      "/images/services/On-Page SEO.jpg.jpeg",
     primaryButton: "Get Free SEO Audit",
     secondaryButton: "Talk To SEO Experts"
   },
@@ -254,7 +254,7 @@ export const seoData =[
     subtitle:
       "Optimize your website's technical foundation to improve search visibility, user experience, and organic rankings.",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400",
+      "/images/services/Technical SEO.jpg.jpeg",
     primaryButton: "Get Free Technical SEO Audit",
     secondaryButton: "Talk To SEO Specialists"
   },
@@ -373,7 +373,7 @@ export const seoData =[
     subtitle:
       "Get found by nearby customers and dominate local search results with our proven Local SEO strategies.",
     image:
-      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1400",
+      "/images/services/Local SEO.jpg.jpeg",
     primaryButton: "Get Free Local SEO Audit",
     secondaryButton: "Book Consultation"
   },
@@ -491,7 +491,7 @@ export const seoData =[
     subtitle:
       "Boost your search engine rankings, increase organic traffic, and generate more qualified leads with expert SEO optimization.",
     image:
-      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=1400",
+      "/images/services/SEO Optimization.jpg.jpeg",
     primaryButton: "Get Free SEO Audit",
     secondaryButton: "Talk To SEO Experts"
   },

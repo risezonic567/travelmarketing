@@ -17,7 +17,7 @@ export const marketingData =[
     subtitle:
       "Attract, engage, and convert your audience with strategic content marketing solutions tailored to your business goals.",
     image:
-      "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1400",
+      "/images/services/Content_Marketing.jpg.jpeg",
     primaryButton: "Get Free Consultation",
     secondaryButton: "Talk To Experts"
   },
@@ -136,7 +136,7 @@ export const marketingData =[
     subtitle:
       "Connect with your audience, nurture leads, and drive more sales with strategic email marketing campaigns.",
     image:
-      "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1400",
+      "/images/services/Email_Marketing.jpg.jpeg",
     primaryButton: "Get Free Consultation",
     secondaryButton: "Talk To Experts"
   },
@@ -256,7 +256,7 @@ export const marketingData =[
     subtitle:
       "Unlock the power of data to drive smarter decisions, improve efficiency, and accelerate business growth.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400",
+      "/images/services/Data_Science&Analytics.jpg.jpeg",
     primaryButton: "Get Free Consultation",
     secondaryButton: "Schedule Meeting"
   },
@@ -377,7 +377,7 @@ export const marketingData =[
     subtitle:
       "Generate high-quality leads, increase sales opportunities, and accelerate business growth with proven lead generation strategies.",
     image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1400",
+      "/images/services/Lead_Generation.jpg.jpeg",
     primaryButton: "Get Free Consultation",
     secondaryButton: "Book Strategy Call"
   },
@@ -497,7 +497,7 @@ export const marketingData =[
     subtitle:
       "Accelerate your business growth with result-driven digital marketing strategies tailored to your goals.",
     image:
-      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=1400",
+      "/images/services/Digital_Marketing.jpg.jpeg",
     primaryButton: "Get Free Marketing Audit",
     secondaryButton: "Book Consultation"
   },
@@ -617,7 +617,7 @@ export const marketingData =[
     subtitle:
       "Build a stronger online presence, engage your audience, and drive business growth through strategic social media marketing.",
     image:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1400",
+      "/images/services/Social_Media_Marketing.jpg.jpeg",
     primaryButton: "Get Free Consultation",
     secondaryButton: "Talk To Experts"
   },
@@ -736,7 +736,7 @@ export const marketingData =[
     subtitle:
       "Boost your online visibility, rank higher on Google, and attract more qualified customers with proven SEO strategies.",
     image:
-      "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=1400",
+      "/images/services/Search_Engine_Optimization.jpg.jpeg",
     primaryButton: "Get Free SEO Audit",
     secondaryButton: "Talk To SEO Experts"
   },
@@ -855,7 +855,7 @@ export const marketingData =[
     subtitle:
       "Increase your Shopify store visibility, attract qualified customers, and grow revenue with expert Shopify SEO solutions.",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1400",
+      "/images/services/Shopify_SEO.jpg.jpeg",
     primaryButton: "Get Free SEO Audit",
     secondaryButton: "Talk To Shopify Experts"
   },
@@ -974,7 +974,7 @@ export const marketingData =[
     subtitle:
       "Transform your business with AI-powered solutions that enhance productivity, automate processes, and drive smarter decisions.",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1400",
+      "/images/services/AI_Optimization.jpg.jpeg",
     primaryButton: "Get Free AI Consultation",
     secondaryButton: "Talk To AI Experts"
   },

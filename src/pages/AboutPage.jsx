@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black/40"></div>
 
 
-        <div className="relative z-10 flex flex-col justify-start mt-52  h-full text-white px-6">
+        <div className="relative z-10 flex flex-col justify-start mt-52  h-full text-white px-20">
 
 
 
