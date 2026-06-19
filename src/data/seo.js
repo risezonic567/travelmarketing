@@ -136,7 +136,7 @@ export const seoData =[
     subtitle:
       "Strengthen your website authority, earn quality backlinks, and achieve higher search engine rankings with proven off-page SEO strategies.",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1400",
+      "/images/services/Off-Page SEO.jpg.jpeg",
     primaryButton: "Get Free SEO Analysis",
     secondaryButton: "Talk To SEO Experts"
   },

@@ -15,7 +15,7 @@ import AdsDetails from './components/services/ads'
 import SeoDetails from './components/services/seo'
 import NotFound from './components/404NotFound'
 import WhatsAppButton from './components/WhatsApp'
-import Modal from './components/Modal'
+// import Modal from './components/Modal'
 // import TravelCRM from './components/services/Aboutsection/AboutServices'
 import ContactFormDemo from './components/ContactFormDemo'
 
@@ -39,10 +39,10 @@ function AppContent() {
     <>
       <Navbar />
 
-      <Modal show={show} onClose={() => {
+      {/* <Modal show={show} onClose={() => {
         setShow(false)
         sessionStorage.setItem("modalShown","true")
-      }} />
+      }} /> */}
 
       <Routes>
         <Route path='/' element={<HomePage />} />

@@ -4,21 +4,7 @@ import emailjs from "@emailjs/browser";
 
 export default function Modal({ show, onClose }) {
 
- const form = useRef()
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_d8z2luw', 'template_737hhog', form.current, 'uigXUlPKgly_hX1e4')
-      .then(
-        ()=>{
-          alert("Message Sent Successfully")
-        },
-        (error)=>{
-          console.log(error.text)
-        }
-      )
-    }
+ 
 
 
   return (

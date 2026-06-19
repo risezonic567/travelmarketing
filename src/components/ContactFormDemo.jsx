@@ -1,7 +1,23 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 export default function ContactFormDemo({ show, close }) {
   if (!show) return null;
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_d8z2luw', 'template_8hy1tqi', form.current, 'uigXUlPKgly_hX1e4')
+      .then(
+        ()=>{
+          alert("Message Sent Successfully")
+        },
+        (error)=>{
+          console.log(error.text)
+        }
+      )
+    }
 
   return (
     <div className="fixed inset-0  flex items-center justify-center">
@@ -33,27 +49,27 @@ export default function ContactFormDemo({ show, close }) {
 
         <div className="grid lg:grid-cols-2 gap-6">
             
-          <input className="input" placeholder="Name" />
-          <input className="input" placeholder="Email" />
+          <input className="input" placeholder="Name" name="name"/>
+          <input className="input" placeholder="Email" name="email" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 mt-9 ">
-          <input className="input" placeholder="Company Name"/>
-          <input className="input" placeholder="Phone Number" />
+          <input className="input" placeholder="Company Name" name="companyname"/>
+          <input className="input" placeholder="Phone Number" name="number" />
         </div>
 
         <div className="mt-6">
           <textarea
             rows="6"
+            name="message"
             placeholder="Message"
             className="input resize-none"
           />
         </div>
 
-        <button className="w-full mt-8 h-14 rounded-xl bg-yellow-400 font-semibold">
+        <button type="submit" className="w-full mt-8 h-14 rounded-xl bg-yellow-400 font-semibold">
           Schedule Meeting
         </button>
-
       </div>
     </div>
   );
