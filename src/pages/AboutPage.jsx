@@ -11,7 +11,7 @@ export default function AboutPage() {
       <section className="relative h-screen w-full overflow-hidden">
       
         <img
-          src="/images/TravelAboutusBanner.jpg.jpeg"
+          src="/images/Aboutus_banner.jpg.jpeg"
           alt="TravelAboutusBanner"
           className="absolute top-0 left-0 w-full h-full object-cover"
         />
@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black/40"></div>
 
 
-        <div className="relative z-10 flex flex-col justify-center mt-7 items-center h-full text-white px-6 text-center">
+        <div className="relative z-10 flex flex-col justify-start mt-52  h-full text-white px-6">
 
 
 
