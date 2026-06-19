@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import FeaturesSlider from "../components/Sections/FeaturesSlider";
 import AboutSection from "../components/Sections/AboutSection";
 import ServicesSection from "../components/Sections/ServiceSection";
@@ -9,25 +9,64 @@ import TestimonialSection from "../components/Testimonials";
 import WhyChooseUsPage from "../components/Sections/WhychooseusSection";
 import OurExperts from "../components/Sections/OurExpertSection";
 import { Link } from "react-router-dom";
+import ContactFormDemo from "../components/ContactFormDemo";
 
 
 
 export default function HomePage() {
+
+  const [showModal, setShowModal] = useState(false)
+
+
+
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    videoRef.current.playbackRate = 0.5
+  }, [])
+
+  useEffect(()=>{
+    if(showModal){
+      document.body.style.overflow="hidden"
+    }
+    else{
+      document.body.style.overflow="auto"
+    }
+
+    return ()=>{
+      document.body.style.overflow="auto"
+    }
+  },[showModal])
+
+  
 
   return (
     <div className="overflow-x-hidden bg-white">
 
       <section className="relative min-h-screen w-full overflow-hidden">
 
-        <img
+        {/* <img
           src="/images/Travel Home PAGE Banneer.jpg.jpeg"
           alt="Travel Home PAGE Banneer"
           className="absolute top-0 left-0 w-full h-full object-cover"
-        />
+        /> */}
 
-        <div className="absolute inset-0 bg-black/30"></div>
+        <video
+          src="/video/Travel_Home_Page.mp4"
+          ref={videoRef}
 
-        <div className="relative z-10 flex flex-col justify-center items-center min-h-screen text-white px-4 md:px-6 text-center">
+          autoPlay
+          loop
+          muted
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+        </video>
+
+        <div className="absolute inset-0 bg-black/10"></div>
+
+        <div className="relative z-10 flex flex-col md:mt-12 justify-center items-center min-h-screen text-white px-4 md:px-6 text-center">
+
+             
 
           <motion.h1
             initial={{
@@ -110,12 +149,12 @@ export default function HomePage() {
             justify-center
             items-center
             gap-4
-            mt-10
+            mt-14
             "
           >
 
             <button
-            onClick={() => {window.location.href = '/about-us'}}
+              onClick={() =>setShowModal(true)}
               className="
               bg-yellow-400
               hover:bg-white
@@ -125,6 +164,7 @@ export default function HomePage() {
               px-6
               md:px-8
               py-3.5
+            
               md:py-4
               rounded-full
               transition-all
@@ -136,8 +176,17 @@ export default function HomePage() {
             >
               Get a Free Demo
 
+            
+
               <ArrowRight size={18} />
+
+             
             </button>
+
+               <ContactFormDemo
+                show={showModal}
+                close={() => setShowModal(false)}
+              />
 
             <Link to="https://wa.me/+91-9711110975"
               className="
@@ -150,6 +199,7 @@ export default function HomePage() {
               text-black
               font-semibold
               px-6
+          
               md:px-8
               py-3.5
               md:py-4
@@ -163,29 +213,31 @@ export default function HomePage() {
 
           </motion.div>
 
+       
+
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white/80 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white/20 to-transparent"></div>
 
       </section>
 
       <motion.section
         className="overflow-hidden"
-        
+
       >
         <AboutSection />
       </motion.section>
 
       <motion.section
         className="overflow-hidden"
-        
+
       >
         <ServicesSection />
       </motion.section>
 
       <motion.section
         className="overflow-hidden"
-        
+
       >
         <WhyChooseUsPage />
       </motion.section>
@@ -210,23 +262,23 @@ export default function HomePage() {
       >
         <FeaturesSlider />
       </motion.section>
-      
+
       <motion.section
-      className="overflow-hidden"
+        className="overflow-hidden"
       >
-        <OurExperts/>
+        <OurExperts />
       </motion.section>
 
       <motion.section
         className="overflow-hidden"
-        
+
       >
         <TestimonialSection />
       </motion.section>
 
       <motion.section
         className="overflow-hidden"
-        
+
       >
         <ContactSection />
       </motion.section>

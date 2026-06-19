@@ -124,13 +124,12 @@ export default function AboutSection() {
 
             <div
               className="
-    absolute
+      absolute
     top-0
-    right-0
-    w-[90%]
-    sm:w-[80%]
-    h-[320px]
-    sm:h-[420px]
+
+    w-full
+    h-[400px]
+    sm:h-[500px]
     lg:h-[500px]
     rounded-[25px]
     sm:rounded-[40px]

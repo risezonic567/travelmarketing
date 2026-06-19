@@ -527,8 +527,6 @@ export default function MarketingDetails() {
             );
           }
 
-
-
           if (section.type === "faq") {
 
             return (

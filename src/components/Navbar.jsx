@@ -15,6 +15,7 @@ const Navbar = () => {
   const isBlogDetails =
     location.pathname.startsWith("/blog/");
 
+  
   const [showNavbar, setShowNavbar] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 
@@ -161,6 +162,8 @@ const Navbar = () => {
             ? "bg-black/80 backdrop-blur-md"
             : "bg-transparent"
         }
+
+   
   `}
     >
 

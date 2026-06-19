@@ -165,29 +165,12 @@ export default function OurExperts() {
               whileHover={{
                 scale: 1.05,
               }}
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+              src=""
               alt=""
               className="relative z-10 w-[340px] h-[500px] object-cover rounded-[60px] border-4 border-white/10 shadow-2xl"
             />
 
-            <motion.div
-              animate={{
-                y: [0, -15, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-              }}
-              className="absolute -bottom-5 right-5 bg-yellow-400 text-black px-6 py-4 rounded-2xl shadow-2xl z-20"
-            >
-              <h4 className="text-2xl font-bold">
-                10+
-              </h4>
-
-              <p className="font-medium">
-                Years Experience
-              </p>
-            </motion.div>
+          
           </motion.div>
 
           <div className="space-y-8">
