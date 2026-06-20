@@ -1,15 +1,29 @@
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TestimonialSection from '../components/Testimonials'
 import ServicesMarquee from '../components/Sections/ServiceMarquee'
 import { Link } from 'react-router-dom'
+import ContactFormDemo from "../components/ContactFormDemo";
 
 export default function AboutPage() {
+  const [showModal, setShowModal] = useState(false)
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden"
+    }
+    else {
+      document.body.style.overflow = "auto"
+    }
+
+    return () => document.body.overflow = "auto"
+  }, [showModal])
+
   return (
     <div>
       <section className="relative h-screen w-full overflow-hidden">
-      
+
         <img
           src="/images/Aboutus_banner.jpg.jpeg"
           alt="TravelAboutusBanner"
@@ -79,6 +93,7 @@ export default function AboutPage() {
           >
 
             <button
+              onClick={() => setShowModal(true)}
               className="
               bg-yellow-400
               hover:bg-white
@@ -91,16 +106,22 @@ export default function AboutPage() {
               duration-300
               flex
               items-center
+              cursor-pointer
               gap-3
               "
             >
-              Explore Services
+              Get Free Demo
 
               <ArrowRight size={18} />
             </button>
+            <ContactFormDemo
+              show={showModal}
+              close={() => setShowModal(false)}
+            />
+
 
             <Link
-            to= "tel:+91-9711110975"
+              to="tel:+91-9711110975"
               className="
               border
               border-white/30
@@ -116,7 +137,7 @@ export default function AboutPage() {
               duration-300
               "
             >
-            Call Us
+              Call Us
             </Link>
 
           </motion.div>
@@ -128,7 +149,7 @@ export default function AboutPage() {
       <section className="py-28 bg-white overflow-hidden relative">
 
         <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 blur-[120px] rounded-full"></div>
-      
+
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -228,23 +249,6 @@ export default function AboutPage() {
 
               </div>
 
-              {/* <button
-          className="
-          mt-12
-          bg-yellow-400
-          hover:bg-[#0B1F3A]
-          hover:text-white
-          text-black
-          px-8
-          py-4
-          rounded-full
-          font-semibold
-          transition-all
-          duration-300
-          "
-        >
-          Explore More
-        </button>*/}
             </div>
 
           </div>

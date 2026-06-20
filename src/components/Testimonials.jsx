@@ -93,7 +93,7 @@ export default function TestimonialSection() {
               <img
                 src="/images/testimonial.jpg.jpeg"
                 alt=""
-                className="w-full border h-[300px] sm:h-[450px] md:h-[650px] object-cover"
+                className="w-full  h-[300px] sm:h-[450px] md:h-[650px] object-cover"
               />
 
             </div>

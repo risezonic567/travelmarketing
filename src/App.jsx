@@ -18,6 +18,7 @@ import WhatsAppButton from './components/WhatsApp'
 // import Modal from './components/Modal'
 // import TravelCRM from './components/services/Aboutsection/AboutServices'
 import ContactFormDemo from './components/ContactFormDemo'
+import AboutServices from './components/services/Aboutsection/AboutServices'
 
 
 function AppContent() {
@@ -56,9 +57,10 @@ function AppContent() {
         <Route path='/seo-services/:slug' element={<SeoDetails />} />
         <Route path="/*" element={<NotFound />} />
         <Route path="/form" element={<ContactFormDemo />} />
-        
-      </Routes>
 
+        <Route path ="/about" element={<AboutServices/>}/>
+        
+      </Routes> 
       <WhatsAppButton />
       <Footer />
     </>
