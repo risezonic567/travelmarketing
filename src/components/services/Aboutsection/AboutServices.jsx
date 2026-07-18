@@ -53,7 +53,7 @@ export default function AboutServices() {
                         <p className="text-gray-600 text-lg leading-9 font-serif mt-10 max-w-2xl">
                             We help travelers and businesses explore the world with
                             modern solutions, premium comfort, and trusted support
-                            designed for unforgettable journeys.
+                            designed for unforgettable journey.
                         </p>
 
 

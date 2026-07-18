@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6  right-6 z-50">
       
       <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-10"></span>
 
